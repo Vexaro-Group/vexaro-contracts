@@ -1,0 +1,271 @@
+{
+  "version": "1.0",
+  "chainId": "56",
+  "createdAt": 1793616017253,
+  "meta": {
+    "name": "Vexaro release-2026-10-31 upgrade (bsc)",
+    "description": "Network.upgradeToAndCall(0x250c6EeeEE185d96CFeDEcBd580B8E245B94B143, initializeV3); TokenSale.upgradeToAndCall(0xdee490635b0E1a0976c720156b96054da10c2cA2, initializeV3); Staking.upgradeToAndCall(0xc863D25f91ab8A504Fae16B52d93916B710b5646, no call); Rewards.upgradeToAndCall(0x6607ccB4026d84f48DeF591FC3B44096a6218d06, no call); Jump.upgradeToAndCall(0x7665553300203291437382b639Ee1cF35E9dC713, no call); LicenseSale.upgradeToAndCall(0x569eb1b3f4746b89BA632c42b33BCa8F12A6d4fB, no call); Treasury.upgradeToAndCall(0x7D6a00f700a68B974CE4c0c1C3Cd0A5A5F5e6E1A, no call); Treasury.releaseAll(USDT); Treasury.releaseAll(BNB); Treasury.revokeRole(RESERVE_SPENDER_ROLE, 0xA8353e89b8E10a7660bf715E5D60d8f0A8eD61F2); Staking.enablePoolHalves(1)",
+    "txBuilderVersion": "1.17.0",
+    "createdFromSafeAddress": "0x0c9840c7714DF9A0D97080701c834e90b8D29170",
+    "createdFromOwnerAddress": ""
+  },
+  "transactions": [
+    {
+      "to": "0xB7dE8436F882989D068DE051eb6fD18B50106fCE",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newImplementation",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "upgradeToAndCall",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "newImplementation": "0x250c6EeeEE185d96CFeDEcBd580B8E245B94B143",
+        "data": "0xca21287e00000000000000000000000018019c1359d7b074f5fb62570ef8aa430e7460f1000000000000000000000000259e7e4931662883d62fd867d4c5f035c5270e00000000000000000000000000b15f6ffe89865b6e408c6ca8b5b5dc3df41631a4000000000000000000000000a8353e89b8e10a7660bf715e5d60d8f0a8ed61f2"
+      }
+    },
+    {
+      "to": "0x18019c1359D7b074F5Fb62570Ef8aa430E7460F1",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newImplementation",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "upgradeToAndCall",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "newImplementation": "0xdee490635b0E1a0976c720156b96054da10c2cA2",
+        "data": "0xdf776dcf00000000000000000000000000000000000000000000006c6b935b8bbd40000000000000000000000000000000000000000000000000043c33c1937564800000"
+      }
+    },
+    {
+      "to": "0x259E7e4931662883D62fD867D4c5f035c5270E00",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newImplementation",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "upgradeToAndCall",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "newImplementation": "0xc863D25f91ab8A504Fae16B52d93916B710b5646",
+        "data": "0x"
+      }
+    },
+    {
+      "to": "0xA8353e89b8E10a7660bf715E5D60d8f0A8eD61F2",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newImplementation",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "upgradeToAndCall",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "newImplementation": "0x6607ccB4026d84f48DeF591FC3B44096a6218d06",
+        "data": "0x"
+      }
+    },
+    {
+      "to": "0x917F801954Be1DB991f2f2c3Bc2641FCa2e5c2d4",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newImplementation",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "upgradeToAndCall",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "newImplementation": "0x7665553300203291437382b639Ee1cF35E9dC713",
+        "data": "0x"
+      }
+    },
+    {
+      "to": "0xb15f6fFE89865b6e408c6cA8b5B5Dc3DF41631a4",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newImplementation",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "upgradeToAndCall",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "newImplementation": "0x569eb1b3f4746b89BA632c42b33BCa8F12A6d4fB",
+        "data": "0x"
+      }
+    },
+    {
+      "to": "0x9Ad9728931De68a439bf4a3E55B72a59436dFaF8",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newImplementation",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "upgradeToAndCall",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "newImplementation": "0x7D6a00f700a68B974CE4c0c1C3Cd0A5A5F5e6E1A",
+        "data": "0x"
+      }
+    },
+    {
+      "to": "0x9Ad9728931De68a439bf4a3E55B72a59436dFaF8",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          }
+        ],
+        "name": "releaseAll",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "token": "0x55d398326f99059fF775485246999027B3197955"
+      }
+    },
+    {
+      "to": "0x9Ad9728931De68a439bf4a3E55B72a59436dFaF8",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "token",
+            "type": "address"
+          }
+        ],
+        "name": "releaseAll",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "token": "0x0000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "to": "0x9Ad9728931De68a439bf4a3E55B72a59436dFaF8",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "bytes32",
+            "name": "role",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          }
+        ],
+        "name": "revokeRole",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "role": "0xaa974c326f3887dd59f757d17126958b00b81a01b30580f10c806447010528f7",
+        "account": "0xA8353e89b8E10a7660bf715E5D60d8f0A8eD61F2"
+      }
+    },
+    {
+      "to": "0x259E7e4931662883D62fD867D4c5f035c5270E00",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "poolId",
+            "type": "uint256"
+          }
+        ],
+        "name": "enablePoolHalves",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "poolId": "1"
+      }
+    }
+  ]
+}

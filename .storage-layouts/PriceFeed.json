@@ -1,0 +1,75 @@
+{
+  "contract": "PriceFeed",
+  "plainStorage": [],
+  "namespaces": [
+    {
+      "id": "openzeppelin.storage.AccessControl",
+      "slot": "0x02dd7bc7dec4dceedda775e58dd541e08a116c6c53815c0bd028192f7b626800",
+      "struct": "AccessControlUpgradeable.AccessControlStorage",
+      "members": [
+        {
+          "name": "_roles",
+          "type": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)"
+        }
+      ]
+    },
+    {
+      "id": "openzeppelin.storage.Initializable",
+      "slot": "0xf0c57e16840df040f15088dc2f81fe391c3923bec73e23a9662efc9c229c6a00",
+      "struct": "Initializable.InitializableStorage",
+      "members": [
+        {
+          "name": "_initialized",
+          "type": "uint64"
+        },
+        {
+          "name": "_initializing",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "id": "vexaro.storage.Managed",
+      "slot": "0x470c3be000c81231ae0f32abf7373c18de9f5cb52a491defb5cde4ce318af000",
+      "struct": "Managed.ManagedStorage",
+      "members": [
+        {
+          "name": "pausedFlags",
+          "type": "uint8"
+        }
+      ]
+    },
+    {
+      "id": "vexaro.storage.PriceFeed",
+      "slot": "0x8865aec7db2d5f127e34778d8bf5401ce3d953798d88653437b69119502d6200",
+      "struct": "PriceFeed.PriceFeedStorage",
+      "members": [
+        {
+          "name": "mode",
+          "type": "enum PriceFeed.VexPriceMode"
+        },
+        {
+          "name": "roundSource",
+          "type": "address"
+        },
+        {
+          "name": "adapter",
+          "type": "address"
+        },
+        {
+          "name": "manualPrice",
+          "type": "uint256"
+        },
+        {
+          "name": "bnbFeed",
+          "type": "address"
+        },
+        {
+          "name": "bnbMaxAge",
+          "type": "uint256"
+        }
+      ]
+    }
+  ],
+  "structs": {}
+}

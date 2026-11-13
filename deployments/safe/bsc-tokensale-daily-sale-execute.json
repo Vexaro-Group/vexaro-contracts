@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "chainId": "56",
+  "createdAt": 1794551070607,
+  "meta": {
+    "name": "Vexaro tokensale-daily-sale upgrade (bsc): execute",
+    "description": "execute from the timelock: TokenSale.upgradeToAndCall(0x20FA7058Da028916008f04C369Fd4809ac40E7AE, no call)",
+    "txBuilderVersion": "1.17.0",
+    "createdFromSafeAddress": "0x0c9840c7714DF9A0D97080701c834e90b8D29170",
+    "createdFromOwnerAddress": ""
+  },
+  "transactions": [
+    {
+      "to": "0xFA36924c08C87D825F887aD24bE972dE591FeD69",
+      "value": "0",
+      "data": null,
+      "contractMethod": {
+        "inputs": [
+          {
+            "internalType": "address[]",
+            "name": "targets",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "values",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "bytes[]",
+            "name": "payloads",
+            "type": "bytes[]"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "predecessor",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "salt",
+            "type": "bytes32"
+          }
+        ],
+        "name": "executeBatch",
+        "payable": false
+      },
+      "contractInputsValues": {
+        "targets": "[\"0x18019c1359D7b074F5Fb62570Ef8aa430E7460F1\"]",
+        "values": "[\"0\"]",
+        "payloads": "[\"0x4f1ef28600000000000000000000000020fa7058da028916008f04c369fd4809ac40e7ae00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000\"]",
+        "predecessor": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "salt": "0x9032faf04d4b4ca154fbdc05c9feaa2d345fa3ee0ee7387fadfd84ffa58c2c59"
+      }
+    }
+  ]
+}

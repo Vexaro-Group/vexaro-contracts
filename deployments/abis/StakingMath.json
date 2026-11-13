@@ -1,0 +1,198 @@
+[
+  {
+    "inputs": [],
+    "name": "CheckpointUnorderedInsertion",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "income",
+        "type": "uint256"
+      }
+    ],
+    "name": "IncomeExceeded",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "size",
+        "type": "uint256"
+      }
+    ],
+    "name": "InvalidBatchSize",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "reason",
+        "type": "uint8"
+      }
+    ],
+    "name": "InvalidPoolParams",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "bits",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "SafeCastOverflowedUintDowncast",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "ZeroAmount",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "releasedUpTo",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "stakes",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "income",
+        "type": "uint256"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "by",
+        "type": "address"
+      }
+    ],
+    "name": "AirdropReleased",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "totalClaimed",
+        "type": "uint256"
+      }
+    ],
+    "name": "IncomeConsumed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "dailyBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "periodDays",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxProfitBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "payoutMode",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "returnMode",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "ncRule",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint16",
+            "name": "l1Bps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bool",
+            "name": "jumpEligible",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint128",
+            "name": "usdtMin",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "usdtMax",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint16[3]",
+            "name": "releaseDays",
+            "type": "uint16[3]"
+          }
+        ],
+        "internalType": "struct IStaking.PoolParams",
+        "name": "p",
+        "type": "tuple"
+      }
+    ],
+    "name": "validate",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]

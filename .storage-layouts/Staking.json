@@ -1,0 +1,402 @@
+{
+  "contract": "Staking",
+  "plainStorage": [],
+  "namespaces": [
+    {
+      "id": "openzeppelin.storage.AccessControl",
+      "slot": "0x02dd7bc7dec4dceedda775e58dd541e08a116c6c53815c0bd028192f7b626800",
+      "struct": "AccessControlUpgradeable.AccessControlStorage",
+      "members": [
+        {
+          "name": "_roles",
+          "type": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)"
+        }
+      ]
+    },
+    {
+      "id": "openzeppelin.storage.Initializable",
+      "slot": "0xf0c57e16840df040f15088dc2f81fe391c3923bec73e23a9662efc9c229c6a00",
+      "struct": "Initializable.InitializableStorage",
+      "members": [
+        {
+          "name": "_initialized",
+          "type": "uint64"
+        },
+        {
+          "name": "_initializing",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "id": "vexaro.storage.Managed",
+      "slot": "0x470c3be000c81231ae0f32abf7373c18de9f5cb52a491defb5cde4ce318af000",
+      "struct": "Managed.ManagedStorage",
+      "members": [
+        {
+          "name": "pausedFlags",
+          "type": "uint8"
+        }
+      ]
+    },
+    {
+      "id": "vexaro.storage.Staking",
+      "slot": "0xdc4b5e207eb9eb5b857f4e15d3824dfd743df9ab18a212df8b5f772aa81f0100",
+      "struct": "StakingStore.StakingStorage",
+      "members": [
+        {
+          "name": "vex",
+          "type": "address"
+        },
+        {
+          "name": "network",
+          "type": "address"
+        },
+        {
+          "name": "priceFeed",
+          "type": "address"
+        },
+        {
+          "name": "rewardVault",
+          "type": "address"
+        },
+        {
+          "name": "poolCount",
+          "type": "uint8"
+        },
+        {
+          "name": "refundDay",
+          "type": "uint40"
+        },
+        {
+          "name": "nextStakeId",
+          "type": "uint256"
+        },
+        {
+          "name": "totalPrincipal",
+          "type": "uint256"
+        },
+        {
+          "name": "refundCapUsdt",
+          "type": "uint256"
+        },
+        {
+          "name": "refundUsed",
+          "type": "uint256"
+        },
+        {
+          "name": "pools",
+          "type": "mapping(uint256 => struct StakingStore.Pool)"
+        },
+        {
+          "name": "versions",
+          "type": "mapping(uint256 => mapping(uint256 => struct IStaking.PoolParams))"
+        },
+        {
+          "name": "stakes",
+          "type": "mapping(uint256 => struct StakingStore.Stake)"
+        },
+        {
+          "name": "accounts",
+          "type": "mapping(address => struct StakingStore.Account)"
+        },
+        {
+          "name": "openIds",
+          "type": "mapping(address => uint256[])"
+        },
+        {
+          "name": "p15",
+          "type": "mapping(address => struct Checkpoints.Trace208)"
+        },
+        {
+          "name": "jump",
+          "type": "address"
+        },
+        {
+          "name": "airdropReleasedUpTo",
+          "type": "mapping(address => uint256)"
+        },
+        {
+          "name": "largest",
+          "type": "mapping(address => struct StakingStore.Largest)"
+        }
+      ]
+    }
+  ],
+  "structs": {
+    "IStaking.EarlyClosePreview": [
+      {
+        "name": "status",
+        "type": "uint8"
+      },
+      {
+        "name": "principal",
+        "type": "uint256"
+      },
+      {
+        "name": "burn",
+        "type": "uint256"
+      },
+      {
+        "name": "feeToVault",
+        "type": "uint256"
+      },
+      {
+        "name": "accrued",
+        "type": "uint256"
+      },
+      {
+        "name": "bonusVex",
+        "type": "uint256"
+      },
+      {
+        "name": "deduction",
+        "type": "uint256"
+      },
+      {
+        "name": "refund",
+        "type": "uint256"
+      },
+      {
+        "name": "availableAt",
+        "type": "uint256"
+      },
+      {
+        "name": "maturesAt",
+        "type": "uint256"
+      },
+      {
+        "name": "capRoom",
+        "type": "uint256"
+      }
+    ],
+    "IStaking.PoolParams": [
+      {
+        "name": "dailyBps",
+        "type": "uint16"
+      },
+      {
+        "name": "periodDays",
+        "type": "uint16"
+      },
+      {
+        "name": "maxProfitBps",
+        "type": "uint16"
+      },
+      {
+        "name": "payoutMode",
+        "type": "uint8"
+      },
+      {
+        "name": "returnMode",
+        "type": "uint8"
+      },
+      {
+        "name": "ncRule",
+        "type": "uint8"
+      },
+      {
+        "name": "l1Bps",
+        "type": "uint16"
+      },
+      {
+        "name": "jumpEligible",
+        "type": "bool"
+      },
+      {
+        "name": "usdtMin",
+        "type": "uint128"
+      },
+      {
+        "name": "usdtMax",
+        "type": "uint128"
+      },
+      {
+        "name": "releaseDays",
+        "type": "uint16[3]"
+      }
+    ],
+    "IStaking.StakeView": [
+      {
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "name": "poolId",
+        "type": "uint8"
+      },
+      {
+        "name": "version",
+        "type": "uint16"
+      },
+      {
+        "name": "source",
+        "type": "uint8"
+      },
+      {
+        "name": "state",
+        "type": "uint8"
+      },
+      {
+        "name": "openedAt",
+        "type": "uint256"
+      },
+      {
+        "name": "principal",
+        "type": "uint256"
+      },
+      {
+        "name": "entryUsdt",
+        "type": "uint256"
+      },
+      {
+        "name": "accrued",
+        "type": "uint256"
+      },
+      {
+        "name": "nextMomentAt",
+        "type": "uint256"
+      },
+      {
+        "name": "maturesAt",
+        "type": "uint256"
+      },
+      {
+        "name": "earlyCloseFrom",
+        "type": "uint256"
+      },
+      {
+        "name": "closedAt",
+        "type": "uint256"
+      },
+      {
+        "name": "vested",
+        "type": "uint256"
+      },
+      {
+        "name": "vestClaimed",
+        "type": "uint256"
+      },
+      {
+        "name": "claimable",
+        "type": "uint256"
+      }
+    ],
+    "StakingStore.Account": [
+      {
+        "name": "openPrincipal",
+        "type": "uint128"
+      },
+      {
+        "name": "openEntryUsdt",
+        "type": "uint128"
+      },
+      {
+        "name": "settled",
+        "type": "uint128"
+      },
+      {
+        "name": "claimed",
+        "type": "uint128"
+      },
+      {
+        "name": "settledHalves",
+        "type": "uint128"
+      },
+      {
+        "name": "claimedHalves",
+        "type": "uint128"
+      }
+    ],
+    "StakingStore.Largest": [
+      {
+        "name": "stakeId",
+        "type": "uint64"
+      },
+      {
+        "name": "principal",
+        "type": "uint96"
+      }
+    ],
+    "StakingStore.Pool": [
+      {
+        "name": "versionCount",
+        "type": "uint16"
+      },
+      {
+        "name": "launched",
+        "type": "bool"
+      },
+      {
+        "name": "enabled",
+        "type": "bool"
+      },
+      {
+        "name": "airdropAllowed",
+        "type": "bool"
+      },
+      {
+        "name": "halves",
+        "type": "bool"
+      }
+    ],
+    "StakingStore.Stake": [
+      {
+        "name": "owner",
+        "type": "address"
+      },
+      {
+        "name": "openedAt",
+        "type": "uint40"
+      },
+      {
+        "name": "poolId",
+        "type": "uint8"
+      },
+      {
+        "name": "version",
+        "type": "uint16"
+      },
+      {
+        "name": "source",
+        "type": "uint8"
+      },
+      {
+        "name": "state",
+        "type": "uint8"
+      },
+      {
+        "name": "openIndex",
+        "type": "uint8"
+      },
+      {
+        "name": "principal",
+        "type": "uint96"
+      },
+      {
+        "name": "entryUsdt",
+        "type": "uint128"
+      },
+      {
+        "name": "vexMark",
+        "type": "uint128"
+      },
+      {
+        "name": "usdtMark",
+        "type": "uint128"
+      },
+      {
+        "name": "closedAt",
+        "type": "uint40"
+      },
+      {
+        "name": "finalAccrued",
+        "type": "uint96"
+      },
+      {
+        "name": "vestClaimed",
+        "type": "uint96"
+      }
+    ]
+  }
+}

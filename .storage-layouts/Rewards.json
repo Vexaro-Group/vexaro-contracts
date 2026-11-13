@@ -1,0 +1,194 @@
+{
+  "contract": "Rewards",
+  "plainStorage": [],
+  "namespaces": [
+    {
+      "id": "openzeppelin.storage.AccessControl",
+      "slot": "0x02dd7bc7dec4dceedda775e58dd541e08a116c6c53815c0bd028192f7b626800",
+      "struct": "AccessControlUpgradeable.AccessControlStorage",
+      "members": [
+        {
+          "name": "_roles",
+          "type": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)"
+        }
+      ]
+    },
+    {
+      "id": "openzeppelin.storage.Initializable",
+      "slot": "0xf0c57e16840df040f15088dc2f81fe391c3923bec73e23a9662efc9c229c6a00",
+      "struct": "Initializable.InitializableStorage",
+      "members": [
+        {
+          "name": "_initialized",
+          "type": "uint64"
+        },
+        {
+          "name": "_initializing",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "id": "vexaro.storage.Managed",
+      "slot": "0x470c3be000c81231ae0f32abf7373c18de9f5cb52a491defb5cde4ce318af000",
+      "struct": "Managed.ManagedStorage",
+      "members": [
+        {
+          "name": "pausedFlags",
+          "type": "uint8"
+        }
+      ]
+    },
+    {
+      "id": "vexaro.storage.Rewards",
+      "slot": "0xbc324d4b1ab72d3cd220577d382322316a3c850826ef225173a2a5923611cb00",
+      "struct": "Rewards.RewardsStorage",
+      "members": [
+        {
+          "name": "vex",
+          "type": "address"
+        },
+        {
+          "name": "usdt",
+          "type": "address"
+        },
+        {
+          "name": "treasury",
+          "type": "address"
+        },
+        {
+          "name": "network",
+          "type": "address"
+        },
+        {
+          "name": "staking",
+          "type": "address"
+        },
+        {
+          "name": "priceFeed",
+          "type": "address"
+        },
+        {
+          "name": "wholeBalanceWhenHalfBelowMin",
+          "type": "bool"
+        },
+        {
+          "name": "vexLimit",
+          "type": "struct Rewards.DailyLimit"
+        },
+        {
+          "name": "licenseLimit",
+          "type": "struct Rewards.DailyLimit"
+        },
+        {
+          "name": "lastClaim",
+          "type": "mapping(address => uint40[3])"
+        },
+        {
+          "name": "tokenSale",
+          "type": "address"
+        },
+        {
+          "name": "accountShareBps",
+          "type": "uint16"
+        },
+        {
+          "name": "accountUse",
+          "type": "mapping(address => struct Rewards.AccountUse)"
+        }
+      ]
+    }
+  ],
+  "structs": {
+    "Rewards.AccountCapInfo": [
+      {
+        "name": "shareBps",
+        "type": "uint256"
+      },
+      {
+        "name": "cap",
+        "type": "uint256"
+      },
+      {
+        "name": "used",
+        "type": "uint256"
+      },
+      {
+        "name": "room",
+        "type": "uint256"
+      }
+    ],
+    "Rewards.AccountUse": [
+      {
+        "name": "used",
+        "type": "uint96"
+      },
+      {
+        "name": "day",
+        "type": "uint64"
+      }
+    ],
+    "Rewards.CapInfo": [
+      {
+        "name": "capUsdt",
+        "type": "uint256"
+      },
+      {
+        "name": "cap",
+        "type": "uint256"
+      },
+      {
+        "name": "used",
+        "type": "uint256"
+      },
+      {
+        "name": "room",
+        "type": "uint256"
+      }
+    ],
+    "Rewards.ClaimInfo": [
+      {
+        "name": "balance",
+        "type": "uint256"
+      },
+      {
+        "name": "minimum",
+        "type": "uint256"
+      },
+      {
+        "name": "maximum",
+        "type": "uint256"
+      },
+      {
+        "name": "nextAllowedAt",
+        "type": "uint256"
+      },
+      {
+        "name": "capRoom",
+        "type": "uint256"
+      },
+      {
+        "name": "windowOpen",
+        "type": "bool"
+      },
+      {
+        "name": "priced",
+        "type": "bool"
+      }
+    ],
+    "Rewards.DailyLimit": [
+      {
+        "name": "capUsdt",
+        "type": "uint96"
+      },
+      {
+        "name": "used",
+        "type": "uint96"
+      },
+      {
+        "name": "day",
+        "type": "uint64"
+      }
+    ]
+  }
+}

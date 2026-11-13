@@ -1,0 +1,1631 @@
+{
+  "schemaVersion": 1,
+  "network": "bsc",
+  "chainId": 56,
+  "deployer": "0x22CEABB75fc1545d5a1382C1A95AFEbBbD2cCd15",
+  "createdAt": "2026-10-20T09:31:29.904Z",
+  "updatedAt": "2026-11-13T06:24:30.660Z",
+  "paramsDigest": "0x845eca3ff0197326b563ff0ec5c87a4c8750d12b37d297ff1f68a3054f0534d0",
+  "complete": true,
+  "contracts": {
+    "Vexaro": {
+      "address": "0x1Ad467Fe33418fC873ad424eA5f954B7a1E5D550",
+      "abi": "abis/Vexaro.json",
+      "deployBlock": 128722658,
+      "txHash": "0xa4cd34062785fdcfdd4f5c2cd7ade228e187b3eceda8a069018f8e4fc183a2b8",
+      "verified": true
+    },
+    "License": {
+      "address": "0xf5CE0C20316CD49b5dd6264255018a10F813EAf0",
+      "abi": "abis/License.json",
+      "deployBlock": 128722692,
+      "txHash": "0x91655e36b874db207754646e064de4c9c9766fe40bf9bd65e71d34669e7612cb",
+      "verified": true
+    },
+    "USDT": {
+      "address": "0x55d398326f99059fF775485246999027B3197955",
+      "external": true
+    },
+    "BnbFeed": {
+      "address": "0x0567F2323251f0Aab15c8dFb1967E4e8A7D42aeE",
+      "external": true
+    },
+    "StakingMath": {
+      "address": "0xE55A1b277e33A4d9A4e1A930DEFb72Ac75266Fc1",
+      "abi": "abis/StakingMath.json",
+      "deployBlock": 131226395,
+      "txHash": "0x4f152c240d470f73901551ba6f74e8ae145dd3b488f820a173735bc2a648d810",
+      "verified": true
+    },
+    "Treasury": {
+      "address": "0x9Ad9728931De68a439bf4a3E55B72a59436dFaF8",
+      "implementation": "0x7D6a00f700a68B974CE4c0c1C3Cd0A5A5F5e6E1A",
+      "abi": "abis/Treasury.json",
+      "deployBlock": 128722833,
+      "txHash": "0xc9bf7d7ab8e67ef856005c65b4b6cdae4db409c07de075b0d0c80b54ce2da682",
+      "verified": true
+    },
+    "Network": {
+      "address": "0xB7dE8436F882989D068DE051eb6fD18B50106fCE",
+      "implementation": "0x250c6EeeEE185d96CFeDEcBd580B8E245B94B143",
+      "abi": "abis/Network.json",
+      "deployBlock": 128722909,
+      "txHash": "0x834f6f07e75b751cd729d15bed73ef06c86e5dae0fd330704d33194b7d577c7a",
+      "verified": true
+    },
+    "PriceFeed": {
+      "address": "0x92aEb630248881aAE2eD02381457735af3c79C10",
+      "implementation": "0xa08538c0C41DAee97Cb69e27103211d802C8083F",
+      "abi": "abis/PriceFeed.json",
+      "deployBlock": 128722979,
+      "txHash": "0xcdadc7329305af1264a5b5b5af2a0580082d016c35d7f28c66724cb2cf227694",
+      "verified": true
+    },
+    "TokenSale": {
+      "address": "0x18019c1359D7b074F5Fb62570Ef8aa430E7460F1",
+      "implementation": "0xdee490635b0E1a0976c720156b96054da10c2cA2",
+      "abi": "abis/TokenSale.json",
+      "deployBlock": 128723057,
+      "txHash": "0xb97c0efefd5febf43e7cc1fcf67d6ddfc5c6a5eb8d4e8235894ee241ed61afc2",
+      "verified": true
+    },
+    "Staking": {
+      "address": "0x259E7e4931662883D62fD867D4c5f035c5270E00",
+      "implementation": "0xc863D25f91ab8A504Fae16B52d93916B710b5646",
+      "abi": "abis/Staking.json",
+      "deployBlock": 128723129,
+      "txHash": "0x2de30d5385e293c125b084554a7a788b60c7233ce23b334e0ba488612b382a71",
+      "verified": true
+    },
+    "LicenseSale": {
+      "address": "0xb15f6fFE89865b6e408c6cA8b5B5Dc3DF41631a4",
+      "implementation": "0x569eb1b3f4746b89BA632c42b33BCa8F12A6d4fB",
+      "abi": "abis/LicenseSale.json",
+      "deployBlock": 128723368,
+      "txHash": "0x3c4b289fda2c34222c94811803b5dedc57469e216240493b02dfd0f248472617",
+      "verified": true
+    },
+    "Rewards": {
+      "address": "0xA8353e89b8E10a7660bf715E5D60d8f0A8eD61F2",
+      "implementation": "0x6607ccB4026d84f48DeF591FC3B44096a6218d06",
+      "abi": "abis/Rewards.json",
+      "deployBlock": 128723474,
+      "txHash": "0xcd3414666f01d4499ea906366eae1415da99ebb2e7e9f0a17fa5d69ee5e60b98",
+      "verified": true
+    },
+    "Jump": {
+      "address": "0x917F801954Be1DB991f2f2c3Bc2641FCa2e5c2d4",
+      "implementation": "0x7665553300203291437382b639Ee1cF35E9dC713",
+      "abi": "abis/Jump.json",
+      "deployBlock": 128723543,
+      "txHash": "0xffd6d28d08a33364461ada0ab87681e40e2ba37336c382dfd461a39581a47b58",
+      "verified": true
+    },
+    "NetworkFreeze": {
+      "address": "0x7c1A6F6f43d1559Df18C2076E23C4461ecA3AA8A",
+      "deployBlock": 131226388,
+      "txHash": "0x38294eadae24cf5ab37c5034076e6d6d5c82539892f119b21ad19ca02afbf974",
+      "abi": "abis/NetworkFreeze.json",
+      "verified": true
+    },
+    "TimelockController": {
+      "address": "0xFA36924c08C87D825F887aD24bE972dE591FeD69",
+      "abi": "abis/TimelockController.json",
+      "deployBlock": 131331580,
+      "txHash": "0xbe9de49b45bde554a51fc53da1be6daecbdafd8f3bc70cb2ea0ae16d57f64242",
+      "verified": true
+    }
+  },
+  "config": {
+    "multisig": "0x0c9840c7714DF9A0D97080701c834e90b8D29170",
+    "guardian": "0xa70A19F9563DBEf414D7143D5269Cc08269394a8",
+    "timelockDelay": 86400
+  },
+  "steps": [
+    {
+      "id": "deploy:Vexaro",
+      "status": "done",
+      "txHashes": [
+        "0xa4cd34062785fdcfdd4f5c2cd7ade228e187b3eceda8a069018f8e4fc183a2b8"
+      ],
+      "block": 128722658,
+      "at": "2026-10-20T09:32:04.002Z"
+    },
+    {
+      "id": "deploy:License",
+      "status": "done",
+      "txHashes": [
+        "0x91655e36b874db207754646e064de4c9c9766fe40bf9bd65e71d34669e7612cb"
+      ],
+      "block": 128722692,
+      "at": "2026-10-20T09:32:17.904Z"
+    },
+    {
+      "id": "external:USDT",
+      "status": "done",
+      "txHashes": [],
+      "at": "2026-10-20T09:32:18.804Z"
+    },
+    {
+      "id": "external:BnbFeed",
+      "status": "done",
+      "txHashes": [],
+      "at": "2026-10-20T09:32:19.747Z"
+    },
+    {
+      "id": "deploy:StakingMath",
+      "status": "done",
+      "txHashes": [
+        "0x0b0532a11f690b4dbd5ae25adfca265baf74d4921f06918564846f569af29bd8"
+      ],
+      "block": 128722729,
+      "at": "2026-10-20T09:32:35.651Z"
+    },
+    {
+      "id": "deploy:Treasury",
+      "status": "done",
+      "txHashes": [
+        "0xc9bf7d7ab8e67ef856005c65b4b6cdae4db409c07de075b0d0c80b54ce2da682"
+      ],
+      "block": 128722833,
+      "at": "2026-10-20T09:33:22.784Z"
+    },
+    {
+      "id": "deploy:Network",
+      "status": "done",
+      "txHashes": [
+        "0x834f6f07e75b751cd729d15bed73ef06c86e5dae0fd330704d33194b7d577c7a"
+      ],
+      "block": 128722909,
+      "at": "2026-10-20T09:33:53.941Z"
+    },
+    {
+      "id": "deploy:PriceFeed",
+      "status": "done",
+      "txHashes": [
+        "0xcdadc7329305af1264a5b5b5af2a0580082d016c35d7f28c66724cb2cf227694"
+      ],
+      "block": 128722979,
+      "at": "2026-10-20T09:34:29.344Z"
+    },
+    {
+      "id": "deploy:TokenSale",
+      "status": "done",
+      "txHashes": [
+        "0xb97c0efefd5febf43e7cc1fcf67d6ddfc5c6a5eb8d4e8235894ee241ed61afc2"
+      ],
+      "block": 128723057,
+      "at": "2026-10-20T09:35:03.613Z"
+    },
+    {
+      "id": "deploy:Staking",
+      "status": "done",
+      "txHashes": [
+        "0x2de30d5385e293c125b084554a7a788b60c7233ce23b334e0ba488612b382a71"
+      ],
+      "block": 128723129,
+      "at": "2026-10-20T09:35:34.739Z"
+    },
+    {
+      "id": "deploy:LicenseSale",
+      "status": "done",
+      "txHashes": [
+        "0x3c4b289fda2c34222c94811803b5dedc57469e216240493b02dfd0f248472617"
+      ],
+      "block": 128723368,
+      "at": "2026-10-20T09:37:40.794Z"
+    },
+    {
+      "id": "deploy:Rewards",
+      "status": "done",
+      "txHashes": [
+        "0xcd3414666f01d4499ea906366eae1415da99ebb2e7e9f0a17fa5d69ee5e60b98"
+      ],
+      "block": 128723474,
+      "at": "2026-10-20T09:38:12.290Z"
+    },
+    {
+      "id": "deploy:Jump",
+      "status": "done",
+      "txHashes": [
+        "0xffd6d28d08a33364461ada0ab87681e40e2ba37336c382dfd461a39581a47b58"
+      ],
+      "block": 128723543,
+      "at": "2026-10-20T09:38:40.611Z"
+    },
+    {
+      "id": "wired:TokenSale.vex",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:44.502Z"
+    },
+    {
+      "id": "wired:TokenSale.usdt",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:45.391Z"
+    },
+    {
+      "id": "wired:TokenSale.treasury",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:46.279Z"
+    },
+    {
+      "id": "wired:TokenSale.network",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:47.163Z"
+    },
+    {
+      "id": "wired:TokenSale.priceFeed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:48.043Z"
+    },
+    {
+      "id": "wired:LicenseSale.license",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:48.918Z"
+    },
+    {
+      "id": "wired:LicenseSale.usdt",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:49.835Z"
+    },
+    {
+      "id": "wired:LicenseSale.treasury",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:50.760Z"
+    },
+    {
+      "id": "wired:LicenseSale.network",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:51.640Z"
+    },
+    {
+      "id": "wired:LicenseSale.priceFeed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:52.520Z"
+    },
+    {
+      "id": "wired:LicenseSale.staking",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:53.399Z"
+    },
+    {
+      "id": "wired:Staking.vex",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:54.280Z"
+    },
+    {
+      "id": "wired:Staking.network",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:55.198Z"
+    },
+    {
+      "id": "wired:Staking.priceFeed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:56.070Z"
+    },
+    {
+      "id": "wired:Rewards.vex",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:56.941Z"
+    },
+    {
+      "id": "wired:Rewards.usdt",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:57.821Z"
+    },
+    {
+      "id": "wired:Rewards.treasury",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:58.692Z"
+    },
+    {
+      "id": "wired:Rewards.network",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:38:59.564Z"
+    },
+    {
+      "id": "wired:Rewards.staking",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:39:00.470Z"
+    },
+    {
+      "id": "wired:Rewards.priceFeed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:39:01.346Z"
+    },
+    {
+      "id": "wired:Jump.vex",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:39:02.236Z"
+    },
+    {
+      "id": "wired:Jump.network",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:39:03.108Z"
+    },
+    {
+      "id": "wired:Jump.staking",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:39:04.034Z"
+    },
+    {
+      "id": "wired:Jump.priceFeed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:39:04.905Z"
+    },
+    {
+      "id": "wired:Network.priceFeed",
+      "status": "done",
+      "txHashes": [
+        "0x36ccaeb756406b41303017ce2e9a1ab8866084d8a3958c415a2aee44636ee852"
+      ],
+      "block": 128723663,
+      "at": "2026-10-20T09:39:48.903Z"
+    },
+    {
+      "id": "wired:Staking.rewardVault",
+      "status": "done",
+      "txHashes": [
+        "0xb030d06a10f84f4c1ff5baee6bc02167ed0710e58ffa999e328ff6d769c34dba"
+      ],
+      "block": 128723762,
+      "at": "2026-10-20T09:40:21.636Z"
+    },
+    {
+      "id": "wired:Staking.jump",
+      "status": "done",
+      "txHashes": [
+        "0x2c3ae64869b498d036c65a411877d7228a97cc62f6f03340d83ce4c6553de5bf"
+      ],
+      "block": 128723809,
+      "at": "2026-10-20T09:40:39.754Z"
+    },
+    {
+      "id": "role:Network.HOOK_ROLE->TokenSale",
+      "status": "done",
+      "txHashes": [
+        "0xc29adce819cba5c7df6dc3c3a9ac7f8d93f5187a2c70a7507bd00525818acd39"
+      ],
+      "block": 128723833,
+      "at": "2026-10-20T09:40:50.011Z"
+    },
+    {
+      "id": "role:Network.HOOK_ROLE->Staking",
+      "status": "done",
+      "txHashes": [
+        "0xfe81eaa4ad73c951869db71a3226d52f8747852947ab7e5924ab8e669b5acae0"
+      ],
+      "block": 128723858,
+      "at": "2026-10-20T09:41:00.240Z"
+    },
+    {
+      "id": "role:Network.HOOK_ROLE->LicenseSale",
+      "status": "done",
+      "txHashes": [
+        "0x2605192c966ae4a041ab4df35465ea96afdaf77e9d044131dd430d769bd855f9"
+      ],
+      "block": 128723883,
+      "at": "2026-10-20T09:41:13.536Z"
+    },
+    {
+      "id": "role:Network.HOOK_ROLE->Rewards",
+      "status": "done",
+      "txHashes": [
+        "0x1644187b80a3542ca33edefe44079c2d30bb62e7f24fb777927027f1120e837e"
+      ],
+      "block": 128723908,
+      "at": "2026-10-20T09:41:23.813Z"
+    },
+    {
+      "id": "role:Network.REWARDS_ROLE->Rewards",
+      "status": "done",
+      "txHashes": [
+        "0x622e01c0eaf304cf7d40538fc61127917c4f71905e995bf0567985b6b9402991"
+      ],
+      "block": 128723933,
+      "at": "2026-10-20T09:41:34.007Z"
+    },
+    {
+      "id": "role:Staking.GRANTER_ROLE->Jump",
+      "status": "done",
+      "txHashes": [
+        "0xc089e0e8612a7adfd0873a69cc8cbbbbe64a5dcfac1641b396a2d016cbbd846b"
+      ],
+      "block": 128723958,
+      "at": "2026-10-20T09:41:51.269Z"
+    },
+    {
+      "id": "role:Staking.REWARDS_ROLE->Rewards",
+      "status": "done",
+      "txHashes": [
+        "0x9d89af6261d9462336d38ea1a3d9fe5371953f8eca75a70e6aa247547cd54240"
+      ],
+      "block": 128724011,
+      "at": "2026-10-20T09:42:09.186Z"
+    },
+    {
+      "id": "role:Vexaro.AIRDROP_SPENDER_ROLE->Staking",
+      "status": "done",
+      "txHashes": [
+        "0x9ee5f47249314beb30d26e3f4556966a6ee7e888dcf909cfce991277842362b4"
+      ],
+      "block": 128724036,
+      "at": "2026-10-20T09:42:26.255Z"
+    },
+    {
+      "id": "role:Jump.HOOK_ROLE->Staking",
+      "status": "done",
+      "txHashes": [
+        "0xe4ccede2d308cdda22ee6a1f2e14e87f5abff984c2ca9cc5397d1299e23409f2"
+      ],
+      "block": 128724088,
+      "at": "2026-10-20T09:42:44.148Z"
+    },
+    {
+      "id": "role:Treasury.PAYER_ROLE->TokenSale",
+      "status": "done",
+      "txHashes": [
+        "0x7593e8af450cc40c7ec667a2625ace6e79dd3882764d57dd77942106f99e0327"
+      ],
+      "block": 128724114,
+      "at": "2026-10-20T09:43:01.226Z"
+    },
+    {
+      "id": "role:Treasury.PAYER_ROLE->LicenseSale",
+      "status": "done",
+      "txHashes": [
+        "0xe62ad410c0755db97bdb3c2275696c943bfbf6d635a829fae1ff3a586201825b"
+      ],
+      "block": 128724175,
+      "at": "2026-10-20T09:43:22.942Z"
+    },
+    {
+      "id": "role:Treasury.RESERVE_SPENDER_ROLE->TokenSale",
+      "status": "done",
+      "txHashes": [
+        "0x01e7c0353bf0960caa027e5e99d00a6ca63d6e8a2ee8d6a0ac4c39ff026d73e0"
+      ],
+      "block": 128724200,
+      "at": "2026-10-20T09:43:36.148Z"
+    },
+    {
+      "id": "role:Treasury.RESERVE_SPENDER_ROLE->Rewards",
+      "status": "done",
+      "txHashes": [
+        "0x0459e63d284d2311b050a943a6c999648fec5c39fade17754e5efe95552d55a6"
+      ],
+      "block": 128724225,
+      "at": "2026-10-20T09:43:46.490Z"
+    },
+    {
+      "id": "role:License.MINTER_ROLE->LicenseSale",
+      "status": "done",
+      "txHashes": [
+        "0x143c87f7ac59e234a0da1220efe5fb1b2d374b78cbb89754d40c3f31e7104501"
+      ],
+      "block": 128724250,
+      "at": "2026-10-20T09:43:56.737Z"
+    },
+    {
+      "id": "role:License.BURNER_ROLE->LicenseSale",
+      "status": "done",
+      "txHashes": [
+        "0x1c517ffb3d83cf900222b78fcd08d049730855f20e0fc151c8daac4ba86cca99"
+      ],
+      "block": 128724284,
+      "at": "2026-10-20T09:44:13.923Z"
+    },
+    {
+      "id": "role:Network.GUARDIAN_ROLE->guardian",
+      "status": "done",
+      "txHashes": [
+        "0xe7b82440217490f06ff0ea5511943bc473251cbe196d62f85f873a3d8046986a"
+      ],
+      "block": 128724310,
+      "at": "2026-10-20T09:44:24.264Z"
+    },
+    {
+      "id": "role:Staking.GUARDIAN_ROLE->guardian",
+      "status": "done",
+      "txHashes": [
+        "0x5ddae32c1a4c53e55513153e7c92ced5a3ccbbe995ea8cdacda87e5352ccf2cf"
+      ],
+      "block": 128724335,
+      "at": "2026-10-20T09:44:34.522Z"
+    },
+    {
+      "id": "role:TokenSale.GUARDIAN_ROLE->guardian",
+      "status": "done",
+      "txHashes": [
+        "0xd116b6e7a6314a0e3e835cbfdf5e37aa0bc29cb857fb08d45e2645082130ff7e"
+      ],
+      "block": 128724360,
+      "at": "2026-10-20T09:44:47.910Z"
+    },
+    {
+      "id": "role:LicenseSale.GUARDIAN_ROLE->guardian",
+      "status": "done",
+      "txHashes": [
+        "0x0c44af50e57a03de76a8417d72fa5ce2d4c6bbcd3e26cda9faac612c273a882a"
+      ],
+      "block": 128724385,
+      "at": "2026-10-20T09:44:58.537Z"
+    },
+    {
+      "id": "role:Rewards.GUARDIAN_ROLE->guardian",
+      "status": "done",
+      "txHashes": [
+        "0x339636db663c437379bc061831568fe39b534ed968791170d44ae7e46de6fad3"
+      ],
+      "block": 128724410,
+      "at": "2026-10-20T09:45:08.751Z"
+    },
+    {
+      "id": "role:Jump.GUARDIAN_ROLE->guardian",
+      "status": "done",
+      "txHashes": [
+        "0x24954da14fe2c639bebd3d7f3c780c08a312e9f1846aa1d156d852b85e69df98"
+      ],
+      "block": 128724444,
+      "at": "2026-10-20T09:45:25.853Z"
+    },
+    {
+      "id": "vex.airdropWallet",
+      "status": "done",
+      "txHashes": [
+        "0x5cdec69ad35775862a4f4e3be74e76cd9459613840d32e7fa82ffa5806b6a240"
+      ],
+      "block": 128724469,
+      "at": "2026-10-20T09:45:36.157Z"
+    },
+    {
+      "id": "exempt:TokenSale",
+      "status": "done",
+      "txHashes": [
+        "0xe87c6432df86a2e183cf2cd4d84d30c6b1bcec54767f768b2df6f9c7f2da2376"
+      ],
+      "block": 128724494,
+      "at": "2026-10-20T09:45:46.497Z"
+    },
+    {
+      "id": "exempt:Staking",
+      "status": "done",
+      "txHashes": [
+        "0x0591775955a648c5616518f189360ed5d918faa3ba740d0e2f66d432a69da3cf"
+      ],
+      "block": 128724519,
+      "at": "2026-10-20T09:45:59.753Z"
+    },
+    {
+      "id": "exempt:Rewards",
+      "status": "done",
+      "txHashes": [
+        "0x78764b305f878cf08eb735fa946eca64fe88c9d24cf7aca8f6e169fbcba60cd9"
+      ],
+      "block": 128724544,
+      "at": "2026-10-20T09:46:10.387Z"
+    },
+    {
+      "id": "exempt:Jump",
+      "status": "done",
+      "txHashes": [
+        "0xd01c6c9deda82ec56e84341a8f9bbe9aaca8f99342d5279ebbed13edcab25554"
+      ],
+      "block": 128724570,
+      "at": "2026-10-20T09:46:20.804Z"
+    },
+    {
+      "id": "exempt:0xE2d569D41d26A4b6480c8Caa0B1DC6b9E573Ac0F",
+      "status": "done",
+      "txHashes": [
+        "0x92f8f4f53ded0cf21305ff8314ae34c29f83b25c495776b8c043f6337d8b6bf1"
+      ],
+      "block": 128724595,
+      "at": "2026-10-20T09:46:34.150Z"
+    },
+    {
+      "id": "exempt:0x717ea50524f30b035c3A1373119c6869d3D026D1",
+      "status": "done",
+      "txHashes": [
+        "0xf8ec1f954140d818068b9aa5f60471c9f28a026e74429749df3a04084228fcea"
+      ],
+      "block": 128724620,
+      "at": "2026-10-20T09:46:44.561Z"
+    },
+    {
+      "id": "exempt:0x77c1810B0bca820461fC0F78580829E5b4a1d7D0",
+      "status": "done",
+      "txHashes": [
+        "0xb8be1a9d3ccf73e834ae17aa430afdcdd51fb5f6906fe63ad03788ac2760b163"
+      ],
+      "block": 128724645,
+      "at": "2026-10-20T09:46:54.829Z"
+    },
+    {
+      "id": "restricted:TokenSale",
+      "status": "done",
+      "txHashes": [
+        "0x9b69b00f3d993d790cc6a8e32dfb03feeca9f7855a64cc0c94e01c7687575dd5"
+      ],
+      "block": 128724670,
+      "at": "2026-10-20T09:47:05.118Z"
+    },
+    {
+      "id": "restricted:Staking",
+      "status": "done",
+      "txHashes": [
+        "0xd5f5d0a95cb12d87cbe2dc22aebfa0f4f0a56ea4887d99c92c5d1d11fb1f6042"
+      ],
+      "block": 128724705,
+      "at": "2026-10-20T09:47:22.182Z"
+    },
+    {
+      "id": "restricted:Rewards",
+      "status": "done",
+      "txHashes": [
+        "0xff9b9c12b2e27050c67ef8c3125ae6875de9a73cb651375ec7388cbc5d2a2006"
+      ],
+      "block": 128724729,
+      "at": "2026-10-20T09:47:32.444Z"
+    },
+    {
+      "id": "restricted:Jump",
+      "status": "done",
+      "txHashes": [
+        "0xdb3efda0311a92268913cfc41d7e773d3c3f3099789cf594354297c8a8bc13b5"
+      ],
+      "block": 128724754,
+      "at": "2026-10-20T09:47:49.430Z"
+    },
+    {
+      "id": "treasury.wallets",
+      "status": "done",
+      "txHashes": [
+        "0x6b63f5caae0fc4f1218be922317a227ccb77f9c46e655bb6d7ef8cae064934cf"
+      ],
+      "block": 128724807,
+      "at": "2026-10-20T09:48:07.396Z"
+    },
+    {
+      "id": "feed.roundSource",
+      "status": "done",
+      "txHashes": [
+        "0x68ea6ef88853efa111df58021e4cac869ab3294ed3b54d040a0752199fc68640"
+      ],
+      "block": 128724832,
+      "at": "2026-10-20T09:48:20.780Z"
+    },
+    {
+      "id": "feed.bnbFeed",
+      "status": "done",
+      "txHashes": [
+        "0xe3d321e66689087c8df92f0d0eab45ad6d6ff85aac226b43411c2c2f11aa9bc2"
+      ],
+      "block": 128724868,
+      "at": "2026-10-20T09:48:36.562Z"
+    },
+    {
+      "id": "feed.mode",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:37.800Z"
+    },
+    {
+      "id": "network.ncRates",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:38.681Z"
+    },
+    {
+      "id": "network.lrRates",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:39.643Z"
+    },
+    {
+      "id": "network.backFlow",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:40.551Z"
+    },
+    {
+      "id": "network.tierLevels",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:41.421Z"
+    },
+    {
+      "id": "license.price:1/30",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:42.301Z"
+    },
+    {
+      "id": "license.price:1/180",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:43.190Z"
+    },
+    {
+      "id": "license.price:1/360",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:44.071Z"
+    },
+    {
+      "id": "license.price:2/30",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:44.941Z"
+    },
+    {
+      "id": "license.price:2/180",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:45.830Z"
+    },
+    {
+      "id": "license.price:2/360",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:46.738Z"
+    },
+    {
+      "id": "license.price:3/30",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:47.618Z"
+    },
+    {
+      "id": "license.price:3/180",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:48.498Z"
+    },
+    {
+      "id": "license.price:3/360",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:49.378Z"
+    },
+    {
+      "id": "license.price:4/30",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:50.258Z"
+    },
+    {
+      "id": "license.price:4/180",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:51.138Z"
+    },
+    {
+      "id": "license.price:4/360",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:48:52.008Z"
+    },
+    {
+      "id": "pool:1.version",
+      "status": "done",
+      "txHashes": [
+        "0xb0c580edf0ba34e889219d6c7df239cf3b5e115307157c5fcb2b7ffb2a8240d4"
+      ],
+      "block": 128724945,
+      "at": "2026-10-20T09:49:11.191Z"
+    },
+    {
+      "id": "pool:1.launch",
+      "status": "done",
+      "txHashes": [
+        "0x4d5b9ad414b953a9d25de340a116f010353a6447de2281853633d84d140025c3"
+      ],
+      "block": 128724972,
+      "at": "2026-10-20T09:49:21.879Z"
+    },
+    {
+      "id": "pool:2.version",
+      "status": "done",
+      "txHashes": [
+        "0x426272ac891bec5847d53c8789d0fca00fcd374c577c8050b334e3ec9643efa6"
+      ],
+      "block": 128725011,
+      "at": "2026-10-20T09:49:41.211Z"
+    },
+    {
+      "id": "pool:2.launch",
+      "status": "done",
+      "txHashes": [
+        "0x365a74ca6ebd2360444c53d4174bc03e34bc709541e429679af0b7260bb308f7"
+      ],
+      "block": 128725037,
+      "at": "2026-10-20T09:49:51.422Z"
+    },
+    {
+      "id": "pool:3.version",
+      "status": "done",
+      "txHashes": [
+        "0xb4863d3e8739462a449ee1acd556b6e3e7244efba1357641731af7242a6366aa"
+      ],
+      "block": 128725064,
+      "at": "2026-10-20T09:50:03.580Z"
+    },
+    {
+      "id": "pool:3.launch",
+      "status": "done",
+      "txHashes": [
+        "0x6e2556f9a21582583bbeff4fdcb3bd1e13e8bf6bd112d47b2e44968ce12f314f"
+      ],
+      "block": 128725091,
+      "at": "2026-10-20T09:50:16.816Z"
+    },
+    {
+      "id": "pool:4.version",
+      "status": "done",
+      "txHashes": [
+        "0x22b65e85b6d73bb42161b2c21272227af76a45c8ec96bd500438aa9f0d8f36b5"
+      ],
+      "block": 128725119,
+      "at": "2026-10-20T09:50:29.100Z"
+    },
+    {
+      "id": "pool:5.version",
+      "status": "done",
+      "txHashes": [
+        "0x1c26a37416b26b469d3b011e8512807b2fbc16e77972e36d6dc419791cd20339"
+      ],
+      "block": 128725150,
+      "at": "2026-10-20T09:50:44.746Z"
+    },
+    {
+      "id": "pool:6.version",
+      "status": "done",
+      "txHashes": [
+        "0x3495c3d4846a3a1af075f0f6044b7918e16dd353a1c5b98465922bb2ef4a7bbb"
+      ],
+      "block": 128725179,
+      "at": "2026-10-20T09:50:56.937Z"
+    },
+    {
+      "id": "pool:7.version",
+      "status": "done",
+      "txHashes": [
+        "0x027266a742a3627e737e70bba49fe52b97f3f6ed815739f0f1bd50904014f890"
+      ],
+      "block": 128725209,
+      "at": "2026-10-20T09:51:09.277Z"
+    },
+    {
+      "id": "pool:8.version",
+      "status": "done",
+      "txHashes": [
+        "0xa25363ce87bbe8a1697100bada29462920d9fa1c2f42f5ce48086bb46c507c6f"
+      ],
+      "block": 128725239,
+      "at": "2026-10-20T09:51:24.497Z"
+    },
+    {
+      "id": "pool:9.version",
+      "status": "done",
+      "txHashes": [
+        "0x71e37cec94e186f36b0e67cf16c42c46cda9f617adaf99b65c27575ab1282667"
+      ],
+      "block": 128725269,
+      "at": "2026-10-20T09:51:36.905Z"
+    },
+    {
+      "id": "pool:10.version",
+      "status": "done",
+      "txHashes": [
+        "0x656c372ea8d5c74e8d5b81568174b43edf75fe4aab2da3ee28ec67718738fd53"
+      ],
+      "block": 128725298,
+      "at": "2026-10-20T09:51:49.207Z"
+    },
+    {
+      "id": "pool:11.version",
+      "status": "done",
+      "txHashes": [
+        "0x2e8b560eff0213b5fa7d5cb7df533ead49064faa3f81e154258264810f2101fb"
+      ],
+      "block": 128725329,
+      "at": "2026-10-20T09:52:04.846Z"
+    },
+    {
+      "id": "pool:12.version",
+      "status": "done",
+      "txHashes": [
+        "0x970bfd3e218760a7941fff784b9e391e65523534dbf9eb06837d0f1a8662ee51"
+      ],
+      "block": 128725359,
+      "at": "2026-10-20T09:52:17.028Z"
+    },
+    {
+      "id": "pool:13.version",
+      "status": "done",
+      "txHashes": [
+        "0x721cef315b322426dac4248a26c420c833bc329b19813198c4a8598e546c4465"
+      ],
+      "block": 128725388,
+      "at": "2026-10-20T09:52:32.259Z"
+    },
+    {
+      "id": "pool:14.version",
+      "status": "done",
+      "txHashes": [
+        "0x4107f0ad572aff83f3f1eb3836c89220f630df7e2916917b3c38dc6c1d8c8d0b"
+      ],
+      "block": 128725418,
+      "at": "2026-10-20T09:52:44.694Z"
+    },
+    {
+      "id": "pool:1.airdropAllowed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:52:45.573Z"
+    },
+    {
+      "id": "pool:2.airdropAllowed",
+      "status": "done",
+      "txHashes": [
+        "0xdacbadc1356ee5f68703b078392a608d20fb6023c80eb55e66a464fbdeb5cb13"
+      ],
+      "block": 128725448,
+      "at": "2026-10-20T09:52:55.848Z"
+    },
+    {
+      "id": "pool:3.airdropAllowed",
+      "status": "done",
+      "txHashes": [
+        "0x35110367573c953c43b9a545f404ae8c6711741046779abb3edf7085da66de28"
+      ],
+      "block": 128725472,
+      "at": "2026-10-20T09:53:09.112Z"
+    },
+    {
+      "id": "pool:4.airdropAllowed",
+      "status": "done",
+      "txHashes": [
+        "0x92e96bd360476fcf7a0c27021457b4626fdb1654bd1661f5166d8f594a54985d"
+      ],
+      "block": 128725534,
+      "at": "2026-10-20T09:53:34.668Z"
+    },
+    {
+      "id": "pool:5.airdropAllowed",
+      "status": "done",
+      "txHashes": [
+        "0x6797e12b0f3c8729ca0087627641d16cb44b7c144d9ae83fd27574ba58cbf4b9"
+      ],
+      "block": 128725559,
+      "at": "2026-10-20T09:53:47.859Z"
+    },
+    {
+      "id": "pool:6.airdropAllowed",
+      "status": "done",
+      "txHashes": [
+        "0xf5e067beec985512bae7ebd2fa83b50b2f5cb556e71151c5359e08d1b18507c2"
+      ],
+      "block": 128725585,
+      "at": "2026-10-20T09:53:58.126Z"
+    },
+    {
+      "id": "pool:7.airdropAllowed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:53:59.006Z"
+    },
+    {
+      "id": "pool:8.airdropAllowed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:53:59.886Z"
+    },
+    {
+      "id": "pool:9.airdropAllowed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:54:00.766Z"
+    },
+    {
+      "id": "pool:10.airdropAllowed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:54:01.648Z"
+    },
+    {
+      "id": "pool:11.airdropAllowed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:54:02.545Z"
+    },
+    {
+      "id": "pool:12.airdropAllowed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:54:03.424Z"
+    },
+    {
+      "id": "pool:13.airdropAllowed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:54:04.305Z"
+    },
+    {
+      "id": "pool:14.airdropAllowed",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:54:05.185Z"
+    },
+    {
+      "id": "staking.refundCap",
+      "status": "done",
+      "txHashes": [
+        "0xc149b13ce1cba22edb27b365c190ca03cdfbd4820afcb1b5e434fa33cfb9d7d9"
+      ],
+      "block": 128725663,
+      "at": "2026-10-20T09:54:41.352Z"
+    },
+    {
+      "id": "rewards.cap.rewardVex",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:54:42.350Z"
+    },
+    {
+      "id": "rewards.cap.rewardUsdt",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:54:43.428Z"
+    },
+    {
+      "id": "tokenSale.currentSellFee",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:54:44.316Z"
+    },
+    {
+      "id": "tokenSale.currentSell.accountCapUsdt",
+      "status": "done",
+      "txHashes": [
+        "0x3ddd334976e88e0a1be863c6c1ab8c683ebcd6bdf2541499c15379d3b7286af3"
+      ],
+      "block": 128725752,
+      "at": "2026-10-20T09:55:20.807Z"
+    },
+    {
+      "id": "tokenSale.currentSell.globalCapUsdt",
+      "status": "done",
+      "txHashes": [
+        "0x9127a3646b2e707b7f8dffdd239c46d67e1e501bed2dfad5cd18060f28f7f0e4"
+      ],
+      "block": 128725795,
+      "at": "2026-10-20T09:55:34.227Z"
+    },
+    {
+      "id": "rewards.wholeBalance",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:55:35.117Z"
+    },
+    {
+      "id": "round:1.add",
+      "status": "done",
+      "txHashes": [
+        "0x0d405441f1478adf5cdfb1aa92c96c183a5f902ea0f44e6fdcf335b2f90e6d5a"
+      ],
+      "block": 128725834,
+      "at": "2026-10-20T09:55:50.304Z"
+    },
+    {
+      "id": "round:2.add",
+      "status": "done",
+      "txHashes": [
+        "0x6649b0c61d0f16759d5d5d8e5c5088e8ef9b3b814e52c877e32c097dc5bc2c1a"
+      ],
+      "block": 128725880,
+      "at": "2026-10-20T09:56:12.201Z"
+    },
+    {
+      "id": "round:3.add",
+      "status": "done",
+      "txHashes": [
+        "0x752443f56f8ff6c952fa351f1c06f3314e3e6fd4a4593995738ae11ec85f4943"
+      ],
+      "block": 128725917,
+      "at": "2026-10-20T09:56:27.335Z"
+    },
+    {
+      "id": "round:4.add",
+      "status": "done",
+      "txHashes": [
+        "0x59ccdc77be9baa5140fd3bb5f56fbe900efb6435c692cd91a8e245ff61928c03"
+      ],
+      "block": 128725963,
+      "at": "2026-10-20T09:56:49.187Z"
+    },
+    {
+      "id": "round:5.add",
+      "status": "done",
+      "txHashes": [
+        "0xfb8964f5662ca5cbe8456dc4b42b83522e159c9ed1fcee79cea7cafd18b35140"
+      ],
+      "block": 128725999,
+      "at": "2026-10-20T09:57:04.959Z"
+    },
+    {
+      "id": "round:active",
+      "status": "done",
+      "txHashes": [
+        "0x6d03170ccbc07ce6060938e108dc68d10aea93ef7084e29ac7b2d7139beca2e6"
+      ],
+      "block": 128726036,
+      "at": "2026-10-20T09:57:26.132Z"
+    },
+    {
+      "id": "round:1.fund",
+      "status": "done",
+      "txHashes": [
+        "0xd6479d0cf105a4417d47fdbdf637d4e155434733613a50cb80399b0968c658b3",
+        "0x328df7dbf9636fcac8da2ce846ac25903c6e305a8a50afdc2bf3f7941da06ef8"
+      ],
+      "block": 128726124,
+      "at": "2026-10-20T09:58:01.758Z"
+    },
+    {
+      "id": "fund.rewards",
+      "status": "done",
+      "txHashes": [
+        "0x51c457b167961b6b5bc39656879d04a76d13e6e40dc273135f198560eb5f6657",
+        "0x779607216cc880ecd9c014125578e942adde51265ee8ba7ff90b00cf32ed4485"
+      ],
+      "block": 128726183,
+      "at": "2026-10-20T09:58:28.335Z"
+    },
+    {
+      "id": "fund.jump",
+      "status": "done",
+      "txHashes": [
+        "0xf7194fe07efee6149d993df44390b0154513f96a6288aa1b4ad4b855acbcae77",
+        "0xc9d7657d6c877bcbf2a01309c21771677752e76aac6daf59a06d03edbe24f0eb"
+      ],
+      "block": 128726276,
+      "at": "2026-10-20T09:59:14.458Z"
+    },
+    {
+      "id": "fund.airdrop",
+      "status": "done",
+      "txHashes": [
+        "0xee2450f705f7d04858539a3a1ab01277368c84c34657ddd48119bb8496c95a1d"
+      ],
+      "block": 128726341,
+      "at": "2026-10-20T09:59:37.245Z"
+    },
+    {
+      "id": "treasury.reserve",
+      "status": "already-on-chain",
+      "txHashes": [],
+      "at": "2026-10-20T09:59:38.116Z"
+    },
+    {
+      "id": "vex.remainder",
+      "status": "done",
+      "txHashes": [
+        "0xea65d05eed4bb2ceb4696617ff364e3b7518a74769b1b10757aee95df66bce6c"
+      ],
+      "block": 128726410,
+      "at": "2026-10-20T10:00:09.271Z"
+    },
+    {
+      "id": "vex.fee",
+      "status": "done",
+      "txHashes": [
+        "0xbb57d708b93677d46ea072954b2429cd148156d401bbc3a3c2f0242bc8f87a33"
+      ],
+      "block": 128726473,
+      "at": "2026-10-20T10:00:53.136Z"
+    }
+  ],
+  "handover": {
+    "mode": "safe",
+    "multisig": "0x0c9840c7714DF9A0D97080701c834e90b8D29170",
+    "safe": "0x0c9840c7714DF9A0D97080701c834e90b8D29170",
+    "granted": true,
+    "completed": true,
+    "adminKeptBy": null,
+    "safeOwners": {
+      "owners": [
+        "0x278B80a076Eb5A64A9416D7b91D2029392dC883E",
+        "0x8B8f8B094Dc1f0E1ebf803A672766D559cCcf097",
+        "0x3e4E533Da9f66d5a2223c02205a9EdcEdB526B7b"
+      ],
+      "threshold": 2
+    },
+    "at": {
+      "block": 130413080,
+      "txHashes": [
+        "0x9e0bbcd3e99c2c0dfb58113e8423cb56d39a97eded72b04d5f413f5b4906705c",
+        "0xcf5c80f92df1ef5645581c282cba3ab50057f936b3fc9b3f93d933c661809cdd",
+        "0x98e3d42439468d784673eb8828b2f721e890fe15411c99d6c1ded72ee8f55438",
+        "0x6bf91cc29ff14edfc42ee2412ba458ee00b97fd698e324dc6c26adfac5f82c77",
+        "0x75017acfdc2b7e2db7716b89836897751e6f4328cfa6bc345be8561c6b8c1050",
+        "0xa3ec3968040147a449e4fe5f8e6fcc1154cd9669e9dbbb60fea55c0beac1f418",
+        "0x6e48a48d72f0dec73f26574b47b0115014097d7cbb43b9aeb27fb48ae1ac279a",
+        "0x28c2d3a4181a9b418bf805ed325d1e4c27e66e3581dcf7ab44b6662c5e879aea",
+        "0x8d891589394d265fd4291b0237cb3e32bb4e9149e55b3ee718e3db06a5c0732e",
+        "0xc1b1b99e5a0168e70999069952defa71dcaac31ab97d8a87dee9d566915fac0b",
+        "0x4580726ad5795d3e7d76c6a569cf3ee81a358c36c873b6fa58a51081c4344046",
+        "0x97d5b391643a07c1f18f85f60431038c4c79870d73264c8a1ae2c54db92f1036",
+        "0xbc3231cd16b2b55fc0b734a58ba9cc9a7e90548f2cbb90747e723ccbd9d824f6",
+        "0xece44994083bd8f84851ca471e0309f48ec0c629be48598ca9598f94247938e2",
+        "0x8fcd9ef37288f41ee9772e5424b44aba83e6f973f3eb9b28d1ac6269a7007279",
+        "0x308e42246b2b7dcf9718962e34351e65553742d5072f9ec8ab9b2a12f2746c91",
+        "0xc3e191a57e559449a5ef4d4fd5cab9e2eed070420087e0dc27321b495eefb03a",
+        "0xd9717984f17ed1209cbe3788b8a0ae897b7483336f552e878166c01265dc0bd4",
+        "0xffbe0a7d143d17a0b82748b7655e5f57bb40494720cd483b5f2a10b79b537288",
+        "0x753ec01109e21b348b9a54e2a3207ecedf3ee31066bc6498ad3045769c8d637f",
+        "0x04f3a9c225fcda70603f1e62cb79f0d2bed3547e2c85ac35a9c3987d4dbce21f",
+        "0x64dadcecbd414161349ec98d3ddf20b976b6662331a81c9dc730321a8c7071b2",
+        "0x11c86e27f761ea825d18039f265dd5d5986e26bca1d8e6d97ce1fc0d332090f5",
+        "0x1edbf03e6118da28bfc469a9c6da2d1d3b9ba489661a097535dce5d272cc1174",
+        "0xc9621952c137ff90782c6870016c90880644ce3800ef9bb20064b3535708c3d6",
+        "0x12fd4b0b3cc15e9c2ed8e0ab648c6ab9b974e8930885d2138d3d8d3863d9ed06",
+        "0x7292208831ca1f7084384b85e5d25f8e1b9b0941ccd3cfd5e0421c1526f63421",
+        "0x8fb36c54199f6dc849f7200b4b4254df6790587e368264bc9134ba42810482be",
+        "0x191d18bc7d4e6c15e816853c64153f531c3973a2e9ecb0ebf65052b8ee446603",
+        "0x22f26bea47d10333b469b9c41737cf0fa42da6d6ce9c76dcd58043e6f5e1bbc4",
+        "0xc6e7e090ea0faccb7aad3040b3d227ab9267f4513cc492b13240e1305c862059",
+        "0x20de1ebf44ced637b36904cd6268cb203e653b3e5b5f70065f97eddfdbb2ae5a",
+        "0xeff71e921f4043c193f8a41a176659e031b419247845092f50d8dbddb8e3d672",
+        "0x50705ad9c62af51904136bc8a1d035d0dd04d4fcbe8f063bd3b4b097d99d9fb9",
+        "0xa335778e26f91dead4bb33315a523bf4730c802c5fd7ee6e478fa87ee82f3afc",
+        "0xf71f8c3936ee53424977988441bbbbcef2ce47180dfe9d3164c80ad740284a67",
+        "0x8d9f3c79f8b103a324d700cec6bb3b7efaf32cae512108118083d76e7c78f62c",
+        "0x0928ac39fdfb232907086b79abed936dd70f6ef87f884b101ec326664c4459fd",
+        "0xbe4b9851864dd1f2f26a8c163ff7f0fb77dc4f235743fca7f549e2bb5a366ec3",
+        "0x5f090034a75de22f615229a3f2d29b2478d8bb18b8b48d8312813e6478d0e357",
+        "0xa0d75126fd00a5413e6fe9dee939c368b06fa05908c20e28b1e33d09c0075275",
+        "0xc4d4959e46adca371faf308eed75f065d87d18fb2e4c84a936770254c79618d3",
+        "0xa5aa6c3d204547ab09f8128d99d245fc50a134da783e27111ac4302a1480c112",
+        "0xeae0212daa3b0987f9846a7b5b2de2fbe8670b5b60cd2f3bf7df062ee33774a4",
+        "0x9b48b94f4e5de4175cbd2ad328870228e8fc79dbeb11ea91c79cb569cc8c18bd",
+        "0x1a7dd2d6472135790cea6a800f5381636f63d0c73bea325968776d097097bb72",
+        "0x11f904e776593b788af7f92d062fa25d6650a56d4a85fd0522bc3b48ce442afe",
+        "0xc43e624802a351794ea62b68c929091d63dff3939f7c544c4ce8661e2bcb267c",
+        "0x75f7592975540144ae7d7df1665d2f5567e534517a4b294ddaa3c991f2ed6e6b",
+        "0x75c47cb1998c08b2b706d782e72bd6350d310f9d7692e74df466e90381cf8e07",
+        "0x0d391eaaa721892a326797a26a2d87aafccdb7fd1efb364bb1a19b992df06243",
+        "0xfb1c2dba0f549674396273a14849178b3f985c97197f16f504cdd50b3ef5ac51",
+        "0xb8a44ce90631b2358ef6803a58053d067f828a0380e7fcbe8678ab691e16f22e",
+        "0x0262b0e33ac75289168f065cb8dbbdf41352ffea22f983534537e66d518373cf",
+        "0x4b3aaec3a172ca84082f7dd3476ad024be3b0401b41c5507a4013b08be0206bf",
+        "0x549446a17600b16aedc765ba6feb96198af6f45f95e294fc790f0a736c531877",
+        "0x2ce5f293563ccbf4c23625b936b1cc3a3d34012ed5041e6f69f87233d4c83520",
+        "0x3c5e9711125b753a4f8f64d871464abbe47ebff152e4df9755b257e277357b37",
+        "0x07ea492b36abef0ec2cfcbe7a63a07a8db026052574c1576d868295850aff774",
+        "0xbf79e5e7b072af844af425047bafe83242a73f0989d98bfd8c09da871cbf5ada",
+        "0xe92efe19c05c692a9102534e12caa36892741ffe05849a57c245e3151a744931",
+        "0xa1730c8d88c48f60767359a46a647ec3ab8c2f97756c60a7eb3664419cf68aca",
+        "0x578fc659d17cda366767b5f82005aeecd737b3bc6fc6f78927b4f2754fe5c65b",
+        "0x396317c8a8468d7591b1b95d10ca5c1e29841b0c6f1c9d78bb348c9349a0a316"
+      ]
+    },
+    "block": 131337435,
+    "governanceMoveAt": {
+      "block": 131331906,
+      "txHashes": [
+        "0xbe9de49b45bde554a51fc53da1be6daecbdafd8f3bc70cb2ea0ae16d57f64242",
+        "0x888efda0eba159edfab26414d067c99b872ed97ef294c3a322cce2d4502a0aa8",
+        "0x3d2d6c7e7c65a195eae3aa64c9f7719f5b9fba8f4a488bbec5a420488105a73a",
+        "0x35ec3b3bf4d83374db43c7653e6d15573975dc3208c492c7445165c698d3de1f",
+        "0xa5ea2298554b7a35b233c7cef48c21b54eeede4fd915f076753e1eb94a6274cf",
+        "0x40c7a88ddf9f2da85224a9aab93841f080dda2904efa071f6b09692278e2c973",
+        "0x159e1616e53142a46fd0001d12e8f1d4f3bb9c1d7b79b9c497ab3605ba986c36",
+        "0x4f283305fbbebaff8b55defce2f79fae857da397b51433731902bf7ea6c3d8e2",
+        "0xa94ed933ba190a77b8292172e631d895b3e6ec706469d7c02528db011e4bf977",
+        "0x50ae82c10df981300c648e75ba23d1dfef1e953e366b3fde5587162b6d4ea109",
+        "0x4e0ff7d878b5b67da7477292a08565f0263bac8c016eb433074751ebeb84bf03",
+        "0xae3a31357442ad02a79bb2269f0e3e87f364dc487168a35f573ac453b7f7ffee",
+        "0xf6eb9a96ce1c2ce8ff447349856e6be93a8a9adee71e281b4cb554ae7ea3ee4c",
+        "0x87209daaba382c7aa0c3f3e42eb91a0b346bbad512024b3bd035f6d00bc69685",
+        "0x59c18f9d3620382fe05d09e22ac172bf838877e599c5bc8d0a8eeb7107ad6d3e",
+        "0xdf09380c7c5b0da61426b4a38d2ae4278b50e0ff374837a434e62915d7b16040",
+        "0x3fcaffeda9bfffd90a3112909e01f321f5339e8d722f7af89c65e36581f9f942",
+        "0x44389ef49a2ddada4039b9eb958b21abcb57be036f676bccaf8e17fba39e2f69",
+        "0xc5032ed14f03ff9f35f349a68dd94bcda5a5d0af927a43d0774e3abdee7955b3",
+        "0xd20ab5973e8172cf1c79bdadaba4f32f713f97bc89cb3f244f97f340c10da958",
+        "0xbe35788d3d6bf80b30e83842d20cdeab797d6b0f997e3268bf7a1f57d0dfa1fc",
+        "0xe50f55a59a9db92c190f0a2748e4363286c56f227e4d7820865aadf1bd380b74",
+        "0xdd7013dfa4d3225c85a7c61ddafe31f953bf3f6b8bfa4d4207e3b8b2afffba24",
+        "0xc526297b8555eac860468c27fe5b06b60bede48dbf348478ba3fdf6aa8aa909d",
+        "0x734f530ce27a9be9fbba1d8e64f2d6e4f92e0d2ad5f66561f59e2cdbf23de1df",
+        "0xa435c8de635c0831322f8038068bbda139f44b1583d1798e275bff79453ec037",
+        "0xc7a8c1405097a3f5ec052f8fa5a144fbf5e02a0875a075f63c67c11a65f53ba0",
+        "0xc78a992c353685b2cb3c4560b9f4c84c652b7f201a218a3c48b557e09d38fa6f",
+        "0x6753cdcfb8a707630d3db6b79c3834afab4905fa9e23f589d8775959060aebd7",
+        "0x83d7d41c4f8802fafb5f9ac0ae8d34865b174f347a5c43add6bd8516fe9e65ef",
+        "0xb2d28c42ad1e4a9b1843a976995010d17c43997220ac552bbb481daf89c63550",
+        "0xd58d7274716809b67049ba6ee61aedf3b2ce4006521a9422882fa52102022fc7",
+        "0xa7faa2398aec7fdd965f3cea6b1d0ef1e2e88c38a7b8c77a7c818cf11828a3aa",
+        "0xe9b89b3a87bdc3017d2d4977972033c06f9591dc2204ede10804b2410630f7ea",
+        "0x5d6a03dfc5b6c6d49fd169c8e6cea27759dec1720f05a7318621fa1bfbf0f25d",
+        "0xc327a5156910bb7a3039d7ebed4e90356e2460d0489934bbe85b5426bea47265",
+        "0xa0c5e5279b1a8b13e4b93638b8d2f7248d4a398c677dc38302b76b12bc30647b",
+        "0xff53cfe047513edce8d63f36dd34e16500e0bc4a07fcc8d67f311a513e4c1e17",
+        "0x0a1529b634b622a003e506d97328a3927f033f885d7dd7357e1ce845d6da4a64",
+        "0x3b433d33fb674f49a96fa479382330eeffea935b35a54fd278475e9299068198",
+        "0x9e2dd128079d152624ebbc1fe81ec3a01b7cccb810f1057b1a867a569ed68cd8"
+      ]
+    },
+    "governance": "timelock",
+    "timelock": "0xFA36924c08C87D825F887aD24bE972dE591FeD69",
+    "timelockDelay": 86400,
+    "renouncedAdminAt": {
+      "block": 131337431,
+      "txHashes": [
+        "0x03541ecbdfe97821258b90977dc7a30dfa79c13b02913bfc2027b5800fb52559",
+        "0x06911a1cc7781e7f14ee5d98684699ffa1e6975a0ac617629d3879afd3d08221",
+        "0xa911b9db73462c188ef41ee2ca9d48959d5fc6a2e1f1854d7a551cde0149447d",
+        "0xb9d8226a6f762af24adf2a953613412af798aa556211763391d629951b1e0dcb",
+        "0xe86ed3d4e28bdf415c5cfda5863b36a52a73d3d045357848863774501bcb98c1",
+        "0xe2b3b6736971ac9da3295636b3c0d392aada56614255afb1b5cea493389ed67d",
+        "0x59feaf137efec6110c46efb9f22083d94bf159b598ed73bb82a237be38015de9",
+        "0x44d38fe5500832180b367f9b9d7c8e59e449110d00220dca80c0d9aabb98b539",
+        "0x1ff193d4c0bcd072f8093cf122dcbe96a5a5191f11538a5ccf590dd5de6588b7",
+        "0xd5255f11a5cc5e4fcf60a1487f4cc4e42b825e471fa513d506290707e6f307de"
+      ]
+    },
+    "renouncedRoles": [
+      "Vexaro.DEFAULT_ADMIN_ROLE",
+      "License.DEFAULT_ADMIN_ROLE",
+      "Treasury.DEFAULT_ADMIN_ROLE",
+      "Network.DEFAULT_ADMIN_ROLE",
+      "PriceFeed.DEFAULT_ADMIN_ROLE",
+      "TokenSale.DEFAULT_ADMIN_ROLE",
+      "Staking.DEFAULT_ADMIN_ROLE",
+      "LicenseSale.DEFAULT_ADMIN_ROLE",
+      "Rewards.DEFAULT_ADMIN_ROLE",
+      "Jump.DEFAULT_ADMIN_ROLE"
+    ]
+  },
+  "upgrades": [
+    {
+      "id": "oc13",
+      "startedAt": "2026-10-21T05:37:06.465Z",
+      "implementations": {
+        "Treasury": {
+          "previous": "0x346D2079dFe491FDDc993670A4A7CDE7b0007bB5",
+          "current": "0x037830A7b269293B5dF8404fCff710DbFF3d7527"
+        },
+        "Network": {
+          "previous": "0x78c1C34Bf980cA58111261659CAebA0007760C21",
+          "current": "0x4acACC3F0636260d47830E79E7F62ccFcB3328e4"
+        },
+        "TokenSale": {
+          "previous": "0x7723af2034D33Fba55f4C005351713D1Bdde8224",
+          "current": "0xff57aA19bD4b23d8812381C5a2588472049d248e"
+        },
+        "Rewards": {
+          "previous": "0xD3Ea26A4F08e8163464615561867BdCc2bBbe323",
+          "current": "0x6F42CC27CBa94a6F33CdDC7fdA32Ca34503F1117"
+        },
+        "Jump": {
+          "previous": "0x95f533A98B2628b355655199F0Ac576d1b545389",
+          "current": "0x1199809900f5fB5020C77d130B1A22046d378911"
+        }
+      },
+      "txHashes": [
+        "0x8002476abaac496a9e72182f6cf56ce605d2c60aad4755b485b70f5a889ff3f3",
+        "0x94732a171e0417b785f0fdc9aedbf0a4346f4645edb73daadcfb83a22cf2ea7d",
+        "0x92b5c693aafef9b31bcbc88d2eb5a8a104404d63e93add6f1446f580f1a58bad",
+        "0xdf61211cf9e533c9a25c870d0b6233d55cc5e9365cc20c1ab35b8a683b611e30",
+        "0xc912a68e23cd67844361a1a8e8cd5d81725cc2d0d44226e371574cb59f0d2120",
+        "0xb31b4d28555d815aabec3ddf4404b3670b3a66922d5d3f9aecbc5bdd39bbef83",
+        "0x01b859f66fb51fa3a832f66fb04564af0f6bae102464aaa83a7aa19fae81d6ee"
+      ],
+      "licenseOwed": "0",
+      "via": "direct",
+      "block": 128884330,
+      "completedAt": "2026-10-21T05:45:14.560Z"
+    },
+    {
+      "id": "oc16",
+      "startedAt": "2026-10-23T08:20:40.488Z",
+      "implementations": {
+        "Network": {
+          "previous": "0x4acACC3F0636260d47830E79E7F62ccFcB3328e4",
+          "current": "0xbEC97aACe4165d79A279Fb6BA2de273536123B80"
+        }
+      },
+      "txHashes": [
+        "0x45fee6a9c391b4a6ed722f9dbd55ff86e17d4322aab0df705a4126ef58ecf5fb"
+      ],
+      "via": "direct",
+      "block": 129289209,
+      "completedAt": "2026-10-23T08:23:00.231Z"
+    },
+    {
+      "id": "oc15",
+      "startedAt": "2026-10-24T01:36:37.046Z",
+      "implementations": {
+        "StakingMath": {
+          "previous": "0xC0E8198909C086f42acE2180CF2CDB461100B5AF",
+          "current": "0x5083Ce74e6E9F6360cBb1c6F40ae8D211423d54e",
+          "txHash": "0x6bcc94428fe2c77e6a7b365255b2da0fcc535fa6680c3a4954692454a0b316a5",
+          "deployBlock": 129427045
+        },
+        "Staking": {
+          "previous": "0x298430d4A8aeD38CEb89b4D55ABCEf5B25c3C2A7",
+          "current": "0x3866A1ae9335DB28da5e528C862c4d14cF60Fea6"
+        }
+      },
+      "txHashes": [
+        "0x6bcc94428fe2c77e6a7b365255b2da0fcc535fa6680c3a4954692454a0b316a5",
+        "0x3e7f457b35ff2957b772a4cace0c1be3625fd49705a3ed90984abc161bd96212",
+        "0xf792a531ba0daffa2fd882f5009e6b89afad1eb93cb31e26d06772dc8bbed623"
+      ],
+      "via": "direct",
+      "block": 129427400,
+      "completedAt": "2026-10-24T01:39:41.857Z"
+    },
+    {
+      "id": "oc19",
+      "startedAt": "2026-10-26T07:13:47.617Z",
+      "implementations": {
+        "StakingMath": {
+          "previous": "0x5083Ce74e6E9F6360cBb1c6F40ae8D211423d54e",
+          "current": "0x56Eac1BD93E05BE9d19A1FAaA310182Dc7f03D99",
+          "txHash": "0x0ddacfaa4974e8e2106597279b90abc99da41264be55784152cf57cf9a52e9b9",
+          "deployBlock": 129855714
+        },
+        "Staking": {
+          "previous": "0x3866A1ae9335DB28da5e528C862c4d14cF60Fea6",
+          "current": "0x114FF39a05cC089108A3118Ac75675E3019a6314"
+        },
+        "Rewards": {
+          "previous": "0x6F42CC27CBa94a6F33CdDC7fdA32Ca34503F1117",
+          "current": "0x8435875afEbF77cD03aF547c70F68d14B9EB1F7B"
+        },
+        "LicenseSale": {
+          "previous": "0xf5D936fC1bB4d05105B66c380f5FB38517f928F1",
+          "current": "0xbE1a476604552413Ebe73D228E376F948B67678E"
+        }
+      },
+      "txHashes": [
+        "0x0ddacfaa4974e8e2106597279b90abc99da41264be55784152cf57cf9a52e9b9",
+        "0x6f6a865ceb92a19d87bacd0f7521493040b13609abd0504b1437e3062ccf6d0d",
+        "0xbb6117b99c0f4b3e36dc743d03f800d92907dcd1b49490790335cea95a0e4e1b",
+        "0x964baa3f9b0a2166946054147503030084fc3f674da3121870d355d5ab0a6517"
+      ],
+      "via": "direct",
+      "block": 129856686,
+      "completedAt": "2026-10-26T07:21:28.954Z"
+    },
+    {
+      "id": "release-2026-10-31",
+      "startedAt": "2026-11-02T10:38:35.533Z",
+      "implementations": {
+        "NetworkFreeze": {
+          "previous": "0x0000000000000000000000000000000000000000",
+          "current": "0x7c1A6F6f43d1559Df18C2076E23C4461ecA3AA8A",
+          "txHash": "0x38294eadae24cf5ab37c5034076e6d6d5c82539892f119b21ad19ca02afbf974",
+          "deployBlock": 131226388
+        },
+        "StakingMath": {
+          "previous": "0x56Eac1BD93E05BE9d19A1FAaA310182Dc7f03D99",
+          "current": "0xE55A1b277e33A4d9A4e1A930DEFb72Ac75266Fc1",
+          "txHash": "0x4f152c240d470f73901551ba6f74e8ae145dd3b488f820a173735bc2a648d810",
+          "deployBlock": 131226395
+        },
+        "Network": {
+          "previous": "0xbEC97aACe4165d79A279Fb6BA2de273536123B80",
+          "current": "0x250c6EeeEE185d96CFeDEcBd580B8E245B94B143"
+        },
+        "TokenSale": {
+          "previous": "0xff57aA19bD4b23d8812381C5a2588472049d248e",
+          "current": "0xdee490635b0E1a0976c720156b96054da10c2cA2"
+        },
+        "Staking": {
+          "previous": "0x114FF39a05cC089108A3118Ac75675E3019a6314",
+          "current": "0xc863D25f91ab8A504Fae16B52d93916B710b5646"
+        },
+        "Rewards": {
+          "previous": "0x8435875afEbF77cD03aF547c70F68d14B9EB1F7B",
+          "current": "0x6607ccB4026d84f48DeF591FC3B44096a6218d06"
+        },
+        "Jump": {
+          "previous": "0x1199809900f5fB5020C77d130B1A22046d378911",
+          "current": "0x7665553300203291437382b639Ee1cF35E9dC713"
+        },
+        "LicenseSale": {
+          "previous": "0xbE1a476604552413Ebe73D228E376F948B67678E",
+          "current": "0x569eb1b3f4746b89BA632c42b33BCa8F12A6d4fB"
+        },
+        "Treasury": {
+          "previous": "0x037830A7b269293B5dF8404fCff710DbFF3d7527",
+          "current": "0x7D6a00f700a68B974CE4c0c1C3Cd0A5A5F5e6E1A"
+        }
+      },
+      "txHashes": [],
+      "via": "safe",
+      "safe": {
+        "file": "safe/bsc-release-2026-10-31.json",
+        "safe": "0x0c9840c7714DF9A0D97080701c834e90b8D29170",
+        "createdAt": "2026-11-02T10:40:17.253Z",
+        "calls": [
+          "upgrade:Network",
+          "upgrade:TokenSale",
+          "upgrade:Staking",
+          "upgrade:Rewards",
+          "upgrade:Jump",
+          "upgrade:LicenseSale",
+          "upgrade:Treasury",
+          "release:Treasury:USDT",
+          "release:Treasury:BNB",
+          "revoke:Treasury",
+          "halves:Staking"
+        ]
+      },
+      "completedAt": "2026-11-02T10:53:09.415Z",
+      "block": 131228256
+    },
+    {
+      "id": "tokensale-daily-sale",
+      "startedAt": "2026-11-13T06:20:08.906Z",
+      "implementations": {
+        "TokenSale": {
+          "previous": "0xdee490635b0E1a0976c720156b96054da10c2cA2",
+          "current": "0x20FA7058Da028916008f04C369Fd4809ac40E7AE"
+        }
+      },
+      "txHashes": [],
+      "via": "safe-timelock",
+      "safeTimelock": {
+        "operationId": "0x65ae59f0b8401263b931f51cb512a19fa8c5cbd0a582ce4f7414d002ea298cd6",
+        "salt": "0x9032faf04d4b4ca154fbdc05c9feaa2d345fa3ee0ee7387fadfd84ffa58c2c59",
+        "delay": 86400,
+        "schedule": {
+          "file": "safe/bsc-tokensale-daily-sale-schedule.json",
+          "safe": "0x0c9840c7714DF9A0D97080701c834e90b8D29170",
+          "createdAt": "2026-11-13T06:24:30.571Z",
+          "calls": [
+            "schedule:0x65ae59f0b8401263b931f51cb512a19fa8c5cbd0a582ce4f7414d002ea298cd6"
+          ]
+        },
+        "execute": {
+          "file": "safe/bsc-tokensale-daily-sale-execute.json",
+          "safe": "0x0c9840c7714DF9A0D97080701c834e90b8D29170",
+          "createdAt": "2026-11-13T06:24:30.607Z",
+          "calls": [
+            "execute:0x65ae59f0b8401263b931f51cb512a19fa8c5cbd0a582ce4f7414d002ea298cd6"
+          ]
+        }
+      }
+    }
+  ]
+}

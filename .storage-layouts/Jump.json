@@ -1,0 +1,258 @@
+{
+  "contract": "Jump",
+  "plainStorage": [],
+  "namespaces": [
+    {
+      "id": "openzeppelin.storage.AccessControl",
+      "slot": "0x02dd7bc7dec4dceedda775e58dd541e08a116c6c53815c0bd028192f7b626800",
+      "struct": "AccessControlUpgradeable.AccessControlStorage",
+      "members": [
+        {
+          "name": "_roles",
+          "type": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)"
+        }
+      ]
+    },
+    {
+      "id": "openzeppelin.storage.Initializable",
+      "slot": "0xf0c57e16840df040f15088dc2f81fe391c3923bec73e23a9662efc9c229c6a00",
+      "struct": "Initializable.InitializableStorage",
+      "members": [
+        {
+          "name": "_initialized",
+          "type": "uint64"
+        },
+        {
+          "name": "_initializing",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "id": "vexaro.storage.Jump",
+      "slot": "0x018f181761ddf93650fde40a0085e55dc3171e2575172d42004212b1bdf03d00",
+      "struct": "Jump.JumpStorage",
+      "members": [
+        {
+          "name": "vex",
+          "type": "address"
+        },
+        {
+          "name": "network",
+          "type": "address"
+        },
+        {
+          "name": "staking",
+          "type": "address"
+        },
+        {
+          "name": "priceFeed",
+          "type": "address"
+        },
+        {
+          "name": "reviewPeriod",
+          "type": "uint40"
+        },
+        {
+          "name": "cycles",
+          "type": "mapping(address => mapping(uint256 => struct Jump.Cycle))"
+        },
+        {
+          "name": "counted",
+          "type": "mapping(address => bool)"
+        },
+        {
+          "name": "accounts",
+          "type": "mapping(address => struct Jump.AccountState)"
+        },
+        {
+          "name": "fullCycles",
+          "type": "mapping(address => uint32[])"
+        },
+        {
+          "name": "tokenSale",
+          "type": "address"
+        },
+        {
+          "name": "slotStakes",
+          "type": "mapping(address => mapping(uint256 => uint64[4]))"
+        },
+        {
+          "name": "grantCredits",
+          "type": "mapping(address => mapping(uint256 => struct Jump.GrantCredit))"
+        }
+      ]
+    },
+    {
+      "id": "vexaro.storage.Managed",
+      "slot": "0x470c3be000c81231ae0f32abf7373c18de9f5cb52a491defb5cde4ce318af000",
+      "struct": "Managed.ManagedStorage",
+      "members": [
+        {
+          "name": "pausedFlags",
+          "type": "uint8"
+        }
+      ]
+    }
+  ],
+  "structs": {
+    "Jump.AccountState": [
+      {
+        "name": "grantsClaimed",
+        "type": "uint32"
+      },
+      {
+        "name": "settled",
+        "type": "uint32"
+      },
+      {
+        "name": "earned",
+        "type": "uint32"
+      }
+    ],
+    "Jump.Cycle": [
+      {
+        "name": "slots",
+        "type": "uint8"
+      },
+      {
+        "name": "poolId",
+        "type": "uint8"
+      },
+      {
+        "name": "usdt",
+        "type": "uint128"
+      },
+      {
+        "name": "rejected",
+        "type": "bool"
+      },
+      {
+        "name": "rejectReason",
+        "type": "uint8"
+      },
+      {
+        "name": "claimed",
+        "type": "bool"
+      },
+      {
+        "name": "stakeId",
+        "type": "uint64"
+      }
+    ],
+    "Jump.CycleView": [
+      {
+        "name": "cycleNo",
+        "type": "uint256"
+      },
+      {
+        "name": "start",
+        "type": "uint256"
+      },
+      {
+        "name": "end",
+        "type": "uint256"
+      },
+      {
+        "name": "slots",
+        "type": "uint256"
+      },
+      {
+        "name": "poolId",
+        "type": "uint256"
+      },
+      {
+        "name": "usdt",
+        "type": "uint256"
+      },
+      {
+        "name": "claimableAt",
+        "type": "uint256"
+      },
+      {
+        "name": "rejected",
+        "type": "bool"
+      },
+      {
+        "name": "rejectReason",
+        "type": "uint8"
+      },
+      {
+        "name": "claimed",
+        "type": "bool"
+      },
+      {
+        "name": "stakeId",
+        "type": "uint256"
+      },
+      {
+        "name": "status",
+        "type": "uint8"
+      }
+    ],
+    "Jump.GrantCredit": [
+      {
+        "name": "total",
+        "type": "uint128"
+      },
+      {
+        "name": "credited",
+        "type": "uint128"
+      }
+    ],
+    "Jump.JumpStatus": [
+      {
+        "name": "member",
+        "type": "bool"
+      },
+      {
+        "name": "cycleNo",
+        "type": "uint256"
+      },
+      {
+        "name": "start",
+        "type": "uint256"
+      },
+      {
+        "name": "end",
+        "type": "uint256"
+      },
+      {
+        "name": "slots",
+        "type": "uint256"
+      },
+      {
+        "name": "poolId",
+        "type": "uint256"
+      },
+      {
+        "name": "usdt",
+        "type": "uint256"
+      },
+      {
+        "name": "grantsClaimed",
+        "type": "uint256"
+      },
+      {
+        "name": "grantsEarned",
+        "type": "uint256"
+      },
+      {
+        "name": "grantsLeft",
+        "type": "uint256"
+      },
+      {
+        "name": "fullCycles",
+        "type": "uint256"
+      },
+      {
+        "name": "hasOpenStake",
+        "type": "bool"
+      },
+      {
+        "name": "allocation",
+        "type": "uint256"
+      }
+    ]
+  }
+}

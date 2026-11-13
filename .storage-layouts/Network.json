@@ -1,0 +1,306 @@
+{
+  "contract": "Network",
+  "plainStorage": [],
+  "namespaces": [
+    {
+      "id": "openzeppelin.storage.AccessControl",
+      "slot": "0x02dd7bc7dec4dceedda775e58dd541e08a116c6c53815c0bd028192f7b626800",
+      "struct": "AccessControlUpgradeable.AccessControlStorage",
+      "members": [
+        {
+          "name": "_roles",
+          "type": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)"
+        }
+      ]
+    },
+    {
+      "id": "openzeppelin.storage.Initializable",
+      "slot": "0xf0c57e16840df040f15088dc2f81fe391c3923bec73e23a9662efc9c229c6a00",
+      "struct": "Initializable.InitializableStorage",
+      "members": [
+        {
+          "name": "_initialized",
+          "type": "uint64"
+        },
+        {
+          "name": "_initializing",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "id": "vexaro.storage.Managed",
+      "slot": "0x470c3be000c81231ae0f32abf7373c18de9f5cb52a491defb5cde4ce318af000",
+      "struct": "Managed.ManagedStorage",
+      "members": [
+        {
+          "name": "pausedFlags",
+          "type": "uint8"
+        }
+      ]
+    },
+    {
+      "id": "vexaro.storage.Network",
+      "slot": "0x636a54d177cfbf670f16375a0ea052681a5c5a5f0f07053a267dbc3c5588b200",
+      "struct": "Network.NetworkStorage",
+      "members": [
+        {
+          "name": "members",
+          "type": "mapping(address => struct Network.Member)"
+        },
+        {
+          "name": "licenses",
+          "type": "mapping(address => struct Network.License)"
+        },
+        {
+          "name": "caps",
+          "type": "mapping(address => struct Network.Cap)"
+        },
+        {
+          "name": "freezes",
+          "type": "mapping(address => struct INetwork.FreezeInterval[])"
+        },
+        {
+          "name": "bonuses",
+          "type": "mapping(address => struct Network.Bonus)"
+        },
+        {
+          "name": "priceFeed",
+          "type": "address"
+        },
+        {
+          "name": "ncBps",
+          "type": "uint16[15]"
+        },
+        {
+          "name": "lrBps",
+          "type": "uint16[10]"
+        },
+        {
+          "name": "bfBps",
+          "type": "uint16"
+        },
+        {
+          "name": "bfLevels",
+          "type": "uint8"
+        },
+        {
+          "name": "ncLevels",
+          "type": "uint8[5]"
+        },
+        {
+          "name": "lrLevels",
+          "type": "uint8[5]"
+        },
+        {
+          "name": "licenseOwed",
+          "type": "uint256"
+        },
+        {
+          "name": "guardianFreezeBudget",
+          "type": "uint32"
+        },
+        {
+          "name": "guardianFreezeDay",
+          "type": "uint32"
+        },
+        {
+          "name": "guardianFreezeUsed",
+          "type": "uint32"
+        },
+        {
+          "name": "depths",
+          "type": "mapping(address => uint16)"
+        },
+        {
+          "name": "missedBonus",
+          "type": "mapping(address => uint128[3])"
+        }
+      ]
+    }
+  ],
+  "structs": {
+    "INetwork.FreezeInterval": [
+      {
+        "name": "from",
+        "type": "uint40"
+      },
+      {
+        "name": "until",
+        "type": "uint40"
+      },
+      {
+        "name": "reason",
+        "type": "uint8"
+      }
+    ],
+    "INetwork.MemberView": [
+      {
+        "name": "isMember",
+        "type": "bool"
+      },
+      {
+        "name": "isActive",
+        "type": "bool"
+      },
+      {
+        "name": "sponsor",
+        "type": "address"
+      },
+      {
+        "name": "joinedAt",
+        "type": "uint40"
+      },
+      {
+        "name": "directCount",
+        "type": "uint32"
+      },
+      {
+        "name": "frozen",
+        "type": "bool"
+      },
+      {
+        "name": "sellBlocked",
+        "type": "bool"
+      },
+      {
+        "name": "tier",
+        "type": "uint8"
+      },
+      {
+        "name": "licenseExpiresAt",
+        "type": "uint40"
+      },
+      {
+        "name": "activationSeq",
+        "type": "uint32"
+      },
+      {
+        "name": "licenseActive",
+        "type": "bool"
+      },
+      {
+        "name": "capBase",
+        "type": "uint256"
+      },
+      {
+        "name": "capLimit",
+        "type": "uint256"
+      },
+      {
+        "name": "capUsed",
+        "type": "uint256"
+      },
+      {
+        "name": "capRoom",
+        "type": "uint256"
+      }
+    ],
+    "Network.Bonus": [
+      {
+        "name": "vexCum",
+        "type": "uint128"
+      },
+      {
+        "name": "usdtCum",
+        "type": "uint128"
+      },
+      {
+        "name": "vexDeducted",
+        "type": "uint128"
+      },
+      {
+        "name": "usdtDeducted",
+        "type": "uint128"
+      },
+      {
+        "name": "vexConsumed",
+        "type": "uint128"
+      },
+      {
+        "name": "usdtConsumed",
+        "type": "uint128"
+      }
+    ],
+    "Network.Cap": [
+      {
+        "name": "base",
+        "type": "uint128"
+      },
+      {
+        "name": "used",
+        "type": "uint128"
+      }
+    ],
+    "Network.License": [
+      {
+        "name": "tier",
+        "type": "uint8"
+      },
+      {
+        "name": "expiresAt",
+        "type": "uint40"
+      },
+      {
+        "name": "activationSeq",
+        "type": "uint32"
+      },
+      {
+        "name": "capReached",
+        "type": "bool"
+      }
+    ],
+    "Network.Member": [
+      {
+        "name": "sponsor",
+        "type": "address"
+      },
+      {
+        "name": "joinedAt",
+        "type": "uint40"
+      },
+      {
+        "name": "registered",
+        "type": "bool"
+      },
+      {
+        "name": "frozen",
+        "type": "bool"
+      },
+      {
+        "name": "sellBlocked",
+        "type": "bool"
+      },
+      {
+        "name": "directCount",
+        "type": "uint32"
+      }
+    ],
+    "Network.Trigger": [
+      {
+        "name": "source",
+        "type": "address"
+      },
+      {
+        "name": "program",
+        "type": "uint8"
+      },
+      {
+        "name": "l1Only",
+        "type": "bool"
+      },
+      {
+        "name": "l1Bps",
+        "type": "uint16"
+      },
+      {
+        "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "name": "price",
+        "type": "uint256"
+      }
+    ]
+  }
+}

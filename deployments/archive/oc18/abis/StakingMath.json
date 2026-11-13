@@ -1,0 +1,83 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint8",
+        "name": "reason",
+        "type": "uint8"
+      }
+    ],
+    "name": "InvalidPoolParams",
+    "type": "error"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint16",
+            "name": "dailyBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "periodDays",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint16",
+            "name": "maxProfitBps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "uint8",
+            "name": "payoutMode",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "returnMode",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint8",
+            "name": "ncRule",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint16",
+            "name": "l1Bps",
+            "type": "uint16"
+          },
+          {
+            "internalType": "bool",
+            "name": "jumpEligible",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint128",
+            "name": "usdtMin",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "usdtMax",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint16[3]",
+            "name": "releaseDays",
+            "type": "uint16[3]"
+          }
+        ],
+        "internalType": "struct IStaking.PoolParams",
+        "name": "p",
+        "type": "tuple"
+      }
+    ],
+    "name": "validate",
+    "outputs": [],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]
